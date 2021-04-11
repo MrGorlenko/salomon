@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solomon Premium</title>
+  <link rel="stylesheet/less" type="text/css"
+   href="../style/styles.less">
+  <script src='../js/libs/less.js'></script>
+
+  
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+</head>
+<body class='index'>
+  <header class='header'>
+    <hr>
+    <div class="container">
+      <div class="header__top d-flex-align-between">
+        <div class='header__logos'>
+          <img src="../img/marker.svg" alt="marker">
+          <span>Новосибирск, ул. Мичурина, д. 12а 1 этаж</span>
+        </div>
+
+        <ul>
+          <li><a href="#">Адреса магазинов</a></li>
+          <li><a href="#">Гарантии</a></li>
+          <li><a href="#">Отзывы</a></li>
+          <li><a href="#">Оплата и доставка</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+
+      </div>
+      <div class="header__base d-flex-align-between">
+        <img src="../img/logo.svg" alt="logo">
+
+        <div class='d-flex-align-between'>
+          <div class="header__phone">
+            <img src="../img/phone-icon.svg" alt="phone-icon">
+            <a href="tel:#">
+              8 800 600 50 50
+            </a>
+          </div>
+
+          <div class="compare d-flex-align-between ">
+            <div class='compare__pic'>
+              <img src="../img/compare.svg" alt="">
+              <div class="compare__red 
+              d-flex-align-center">
+                <span class='d-block'>12</span> 
+              </div>
+            </div>
+            
+            <span class='compare__label'>
+              Сравнение
+            </span>
+          </div>
+
+          <button class='header__button'>
+            Заказать звонок
+          </button>
+
+          <a href='#' class='header__basket'>
+            <img src="../img/basket.svg" alt="basket">
+            <div class='d-flex-align-center'>0</div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="nav">
+      <div class="container d-flex justify-content-between">
+        <div class='d-flex-align-between'>
+          <ul class='d-flex-align-between'>
+            <li>Матрасы <img src="../img/arrowDown.svg" alt=""> </li>
+            <li>Кровати <img src="../img/arrowDown.svg" alt=""> </li>
+            <li>Наматрасники <img src="../img/arrowDown.svg" alt=""> </li>
+            <li>Подушки <img src="../img/arrowDown.svg" alt=""> </li>
+          </ul>
+        </div>
+
+        <img src="../img/sale.png" alt="">
+      </div>
+    </div>
+  </header>
+
+  <section class='hero'>
+
+    <div class="container d-flex justify-content-between">
+      <div class="search d-flex flex-direction-column align-items-center">
+
+        <img class='search__logo' src="../img/logo2.svg" alt="logo">
+        <img src="../img/sleepBetter.svg" alt="sleep better, live better">
+        <img class='search__line' src="../img/goldline.svg" alt="">
+
+        <h2>Подбор матраса</h2>
+
+        <div class="search__counter">
+
+        </div>
+
+        <ul class='search__selects'>
+          <li class='d-flex align-items-center'> 
+            <img src="../img/sizeIcon.svg" alt=""> Размер</li>
+          <li class='d-flex align-items-center'> 
+            <img src="../img/featherIcon.svg" alt=""> Жесткость</li>
+          <li class='d-flex align-items-center'> 
+            <img src="../img/heightIcon.svg" alt=""> Высота</li>
+        </ul>
+
+        <button class='search__btn golden-button'>
+          Подобрать
+        </button>
+
+        <button class='search__cancel'>
+          <img src="../img/redAxe.svg" alt="">
+          Отменить 
+        </button>
+      </div>
+      
+      <div class='d-flex flex-direction-column hero__slider'>
+        <div class="slider">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" style='background-image: url("../img/sliderMain1.png");'>
+                <div class="red-mark">
+                  Новинка
+                </div>
+                <div class="slider__info">
+                  <h2>Extra Strong</h2>
+                  <p>Новый матрас в серии по выгодной цене</p>
+                  <h3>от 9 890 ₽</h3>
+                </div>
+                <button class='slider__btn golden-button'>
+                  Подробнее
+                </button>
+              </div>
+              <div class="swiper-slide"
+              style='background-image: url("../img/sliderMain2.png");'> 
+                <div class="red-mark">
+                  Новинка
+                </div>
+                <div class="slider__info">
+                  <h2>-20% скидка <br> на матрас</h2>
+                  <p>При покупке кровати до 05 мая</p>
+                </div>
+                <button class='slider__btn golden-button'>
+                  Подробнее
+                </button>
+              </div>
+              <div class="swiper-slide"
+              style='background-image: url("../img/sliderMain3.png");'>
+                <div class="blue-mark">
+                  Лучшее
+                </div>
+                <div class="slider__info">
+                  <h2>Матрас “Extra <br> Strong”</h2>
+                  <p>По лучшей цене до конца мая</p>
+                </div> 
+                <button class='slider__btn golden-button'>
+                  Подробнее
+                </button>        
+              </div>
+            </div>
+            <div class="custom-pagination"></div>
+
+            <div class="slider__arrows">
+              <img class='prev' src="../img/prevArr.svg" alt="">
+              <img class='next' src="../img/nextArr.svg" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__conds d-flex justify-content-between">
+          <div class="hero__cond">
+            <img src="../img/cond1.svg" alt="">
+            <h4>100 дней</h4>
+            <p>
+              Период тестирования матраса
+            </p>
+          </div>
+          <div class="hero__cond">
+            <img src="../img/cond2.svg" alt="">
+            <h4>
+              Качество 
+            </h4>
+            <p>
+              Гарантированное качество продукции
+            </p>
+          </div>
+          <div class="hero__cond">
+            <img src="../img/cond3.svg" alt="">
+            <h4>
+              Обмен 
+            </h4>
+            <p>
+              Обмен товара, если он Вам не понравился
+            </p>
+          </div>
+          <div class="hero__cond">
+            <img src="../img/cond4.svg" alt="">
+            <h4>
+              Доставка
+            </h4>
+            <p>
+              Бесплатная доставка до двери
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class='catalogMain'>
+    <div class="container">
+      <div class="catalog">
+        <button class="toggle-button">
+          Хиты продаж
+        </button>
+        <button class="toggle-button">    
+          Кровати
+        </button>
+        <button class="toggle-button toggle-button-active">
+          Матрасы
+        </button>
+        <button class="toggle-button">
+          Подушки
+        </button>
+        <div class="sorting">
+          <p>Сортировка по</p>
+          <div class='sorting__filter'>Популярности</div>
+        </div>
+      </div>
+
+      <div class="catalodMainItems">
+        <div class="SaleGood d-flex">
+          <div class="SaleGood__slider">
+
+            <span>Solomon premiun</span>
+            <h3>"Extra Strong"</h3>
+
+            <div class='dicsount-info'>
+              <p>-20%</p>
+            </div>
+
+            <div class="swiper-container2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="../img/extra-strong.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="../img/extra-strong.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="../img/extra-strong.png" alt="">
+                </div>
+              </div>
+
+              <div class="custom-pagination2"></div>
+            </div>
+
+            
+          </div>
+
+          <div class="SaleGood__about d-flex justify-content-between">
+            <img src="../img/goldenDottenLine.svg" alt="">
+            
+            <div class="SaleGood__base">
+              <ul>
+                <li class='d-flex-align-between'> 
+                  <div><img src="../img/featherIcon.svg" alt=""> Жесткость</div>
+                  <div class="info">
+                    средняя
+                  </div>
+                </li>
+                <li class='d-flex-align-between'> 
+                  <div><img src="../img/heightIcon.svg" alt=""> Высота</div>
+                  <div class="buttonsWidget">
+                    <button class='active'>
+                      20 см
+                    </button>
+                    <button>
+                      25cm
+                    </button>
+                  </div>
+                </li>
+                <li class='d-flex-align-between'>
+                  <div><img src="../img/maxWeightIcon.svg" alt="">
+                    max вес</div>
+                  <div class="info">
+                    165кг
+                  </div>
+                </li>
+                <li class='d-flex-align-between '> 
+                  <div>
+                    <img src="../img/sizeIcon.svg" alt=""> Размер
+                  </div>
+                  <div class="selectWidget">
+                    Выбрать
+                  </div>
+                </li>
+              </ul>
+
+              <div class="d-flex SaleGood__icons">
+                <img src="../img/ГАРАНТИЯ.png" alt="garancy">
+                <img src="../img/ГИПОАЛЛЕРГЕННЫЙ.png" alt="hyppoallergyc">
+                <img src="../img/presents.png" alt="presents 1+1">
+              </div>
+            </div>
+
+            <img src="../img/goldenDottenLine.svg" alt="">
+          </div>
+
+          <div class="SaleGood__price">
+            <img class='logo' src="../img/logo2.svg" alt="">
+
+            <p class="SaleGood__price_current">10 500 ₽</p>
+            <p class="SaleGood__price_old">12 900 ₽</p>
+
+            <button class='red'>Купить</button>
+            <button class="gold one-click-button">Купить в 1 клик</button>
+
+            <div class='compare d-flex align-items-center'>
+              <img src="../img/compareGold.svg" alt="">
+              Сравнить
+            </div>
+          </div>
+        </div>
+
+        <div class="SaleGood d-flex">
+          <div class="SaleGood__slider">
+
+            <span>Solomon premiun</span>
+            <h3>"Latex Bio"</h3>
+
+            <div class="swiper-container2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="../img/Latex Bio.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="../img/Latex Bio.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="../img/Latex Bio.png" alt="">
+                </div>
+              </div>
+
+              <div class="custom-pagination2"></div>
+            </div>
+
+            
+          </div>
+
+          <div class="SaleGood__about d-flex justify-content-between">
+            <img src="../img/goldenDottenLine.svg" alt="">
+            
+            <div class="SaleGood__base">
+              <ul>
+                <li class='d-flex-align-between'> 
+                  <div><img src="../img/featherIcon.svg" alt=""> Жесткость</div>
+                  <div class="info">
+                    средняя
+                  </div>
+                </li>
+                <li class='d-flex-align-between'> 
+                  <div><img src="../img/heightIcon.svg" alt=""> Высота</div>
+                  <div class="buttonsWidget">
+                    <button class='active'>
+                      20 см
+                    </button>
+                    <button>
+                      25cm
+                    </button>
+                  </div>
+                </li>
+                <li class='d-flex-align-between'>
+                  <div><img src="../img/maxWeightIcon.svg" alt="">
+                    max вес</div>
+                  <div class="info">
+                    165кг
+                  </div>
+                </li>
+                <li class='d-flex-align-between '> 
+                  <div>
+                    <img src="../img/sizeIcon.svg" alt=""> Размер
+                  </div>
+                  <div class="selectWidget">
+                    Выбрать
+                  </div>
+                </li>
+              </ul>
+
+              <div class="d-flex SaleGood__icons">
+                <img src="../img/ГАРАНТИЯ.png" alt="garancy">
+                <img src="../img/ГИПОАЛЛЕРГЕННЫЙ.png" alt="hyppoallergyc">
+                <img src="../img/presents.png" alt="presents 1+1">
+              </div>
+            </div>
+
+            <img src="../img/goldenDottenLine.svg" alt="">
+          </div>
+
+          <div class="SaleGood__price">
+            <img class='logo' src="../img/logo2.svg" alt="">
+
+            <p class="SaleGood__price_current">7 800 ₽</p>
+            <p class="SaleGood__price_old">11 990 ₽</p>
+
+            <button class='red'>Купить</button>
+            <button class="gold one-click-button">Купить в 1 клик</button>
+
+            <div class='compare d-flex align-items-center'>
+              <img src="../img/compareGold.svg" alt="">
+              Сравнить
+            </div>
+          </div>
+        </div>
+
+        <div class="SaleGood d-flex">
+          <div class="SaleGood__slider">
+
+            <span>Solomon premiun</span>
+            <h3>"Memory Flex"</h3>
+
+            <div class='dicsount-info'>
+              <p>-40%</p>
+            </div>
+
+            <div class="swiper-container2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="../img/Memory Flex.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="../img/Memory Flex.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="../img/Memory Flex.png" alt="">
+                </div>
+              </div>
+
+              <div class="custom-pagination2"></div>
+            </div>
+
+            
+          </div>
+
+          <div class="SaleGood__about d-flex justify-content-between">
+            <img src="../img/goldenDottenLine.svg" alt="">
+            
+            <div class="SaleGood__base">
+              <ul>
+                <li class='d-flex-align-between'> 
+                  <div><img src="../img/featherIcon.svg" alt=""> Жесткость</div>
+                  <div class="info">
+                    средняя
+                  </div>
+                </li>
+                <li class='d-flex-align-between'> 
+                  <div><img src="../img/heightIcon.svg" alt=""> Высота</div>
+                  <div class="buttonsWidget">
+                    <button class='active'>
+                      20 см
+                    </button>
+                    <button>
+                      25cm
+                    </button>
+                  </div>
+                </li>
+                <li class='d-flex-align-between'>
+                  <div><img src="../img/maxWeightIcon.svg" alt="">
+                    max вес</div>
+                  <div class="info">
+                    165кг
+                  </div>
+                </li>
+                <li class='d-flex-align-between '> 
+                  <div>
+                    <img src="../img/sizeIcon.svg" alt=""> Размер
+                  </div>
+                  <div class="selectWidget">
+                    Выбрать
+                  </div>
+                </li>
+              </ul>
+
+              <div class="d-flex SaleGood__icons">
+                <img src="../img/ГАРАНТИЯ.png" alt="garancy">
+                <img src="../img/ГИПОАЛЛЕРГЕННЫЙ.png" alt="hyppoallergyc">
+                <img src="../img/presents.png" alt="presents 1+1">
+              </div>
+            </div>
+
+            <img src="../img/goldenDottenLine.svg" alt="">
+          </div>
+
+          <div class="SaleGood__price">
+            <img class='logo' src="../img/logo2.svg" alt="">
+
+            <p class="SaleGood__price_current">5 580 ₽</p>
+            <p class="SaleGood__price_old">7 924 ₽</p>
+
+            <button class='red'>Купить</button>
+            <button class="gold one-click-button">Купить в 1 клик</button>
+
+            <div class='compare d-flex align-items-center'>
+              <img src="../img/compareGold.svg" alt="">
+              Сравнить
+            </div>
+          </div>
+        </div>
+
+        <button class="ShowAll d-flex-align-center">
+          Показать всё
+        </button>
+        
+      </div>
+    </div>
+  </section>
+
+  <section class="hotOffers">
+
+    <div class="container">
+      <h4>Предложения <span>недели</span></h4>
+
+      <div class="swiper-container3">
+        <div class="custom-arrow3">
+          <img class='prev' src="../img/arrowPrev3.svg" alt="">
+          <img class='next' src="../img/arrowNext3.svg" alt="">
+        </div>
+        <div class="swiper-wrapper">
+          <div style='background-image: url("../img/баннер\ большой-min.png");' 
+            class="swiper-slide"></div>
+          <div style='background-image: url("../img/баннер\ большой-min.png");' 
+            class="swiper-slide"></div>
+          <div style='background-image: url("../img/баннер\ большой-min.png");' 
+            class="swiper-slide"></div>
+        </div>
+
+        <div class="custom-pagination3 d-flex align-items-center"></div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <section class='howToOrder'>
+    <div class="container">
+      <h4>Как заказать матрас</h4>
+
+      <div class="steps d-flex-align-between">
+        <img class='steps__line' src="../img/stepsLine.svg" alt="">
+        <div class="step">
+          <p>1</p>
+          <div class="circle d-flex-align-center">
+            <img src="../img/step1.svg" alt="">
+          </div>   
+          <span>
+            Звоните нам или оформляете заказ через корзину
+          </span>
+        </div>
+        <div class="step">
+          <p>2</p>
+          <div class="circle d-flex-align-center">
+            <img src="../img/step2.svg" alt="">
+          </div>
+          <span>
+            Уточняем с Вами все детали
+          </span>    
+        </div>
+        <div class="step">
+          <p>3</p>
+          <div class="circle d-flex-align-center">
+            <img src="../img/step3.svg" alt="">
+          </div>
+          <span>
+            Ожидаете курьера или приезжаете в пункт выдачи
+          </span>
+        </div>
+        <div class="step">
+          <p>4</p>
+          <div class="circle d-flex-align-center">
+            <img src="../img/step4.svg" alt="">
+          </div>
+          <span>Проверяете матрас и оплачиваете</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="relatedGoods">
+    <div class="container">
+      <h4>Сопутсвующие товары</h4>
+      <div class="swiper-container5">
+        <div class="custom-arrow3">
+          <img class='prev' src="../img/arrowPrev3.svg" alt="">
+          <img class='next' src="../img/arrowNext3.svg" alt="">
+        </div>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide relatedGood ">
+            <img class='logo' src="../img/logo2.svg" alt="">
+      
+            <div class="swiper-container4">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="../img/poof.png" alt="poof">
+                </div>
+                <div class="swiper-slide">
+                  <img src="../img/poof.png" alt="poof">
+                </div>
+                <div class="swiper-slide">
+                  <img src="../img/poof.png" alt="poof">
+                </div>
+              </div>
+              <div class="custom-pagination4 d-flex-align-center"></div>
+            </div>
+      
+            <img class='line' src="../img/goldenDottenLineHorizontal.svg" alt="">
+            <div class="info">
+              <h5>Подушка "Memory Pillow"</h5>
+              <div class="price d-flex-align-center">
+                <p class="price_current">
+                  2 4950 ₽
+                </p>
+                <p class="price_old">
+                  3 990 ₽
+                </p>
+              </div>
+      
+              <div class="buttons d-flex">
+                <button class="golden-button">
+                  Купить
+                </button>
+      
+                <button class="one-click-button">
+                  Купить <br> в 1 клик
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide relatedGood ">
+            <img class='logo' src="../img/logo2.svg" alt="">
+      
+            <div class="swiper-container4">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="../img/poof.png" alt="poof">
+                </div>
+                <div class="swiper-slide">
+                  <img src="../img/poof.png" alt="poof">
+                </div>
+                <div class="swiper-slide">
+                  <img src="../img/poof.png" alt="poof">
+                </div>
+              </div>
+              <div class="custom-pagination4 d-flex-align-center"></div>
+            </div>
+      
+            <img class='line' src="../img/goldenDottenLineHorizontal.svg" alt="">
+            <div class="info">
+              <h5>Подушка "Memory Pillow"</h5>
+              <div class="price d-flex-align-center">
+                <p class="price_current">
+                  2 4950 ₽
+                </p>
+                <p class="price_old">
+                  3 990 ₽
+                </p>
+              </div>
+      
+              <div class="buttons d-flex">
+                <button class="golden-button">
+                  Купить
+                </button>
+      
+                <button class="one-click-button">
+                  Купить <br> в 1 клик
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide relatedGood ">
+            <img class='logo' src="../img/logo2.svg" alt="">
+      
+            <div class="swiper-container4">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="../img/poof.png" alt="poof">
+                </div>
+                <div class="swiper-slide">
+                  <img src="../img/poof.png" alt="poof">
+                </div>
+                <div class="swiper-slide">
+                  <img src="../img/poof.png" alt="poof">
+                </div>
+              </div>
+              <div class="custom-pagination4 d-flex-align-center"></div>
+            </div>
+      
+            <img class='line' src="../img/goldenDottenLineHorizontal.svg" alt="">
+            <div class="info">
+              <h5>Подушка "Memory Pillow"</h5>
+              <div class="price d-flex-align-center">
+                <p class="price_current">
+                  2 4950 ₽
+                </p>
+                <p class="price_old">
+                  3 990 ₽
+                </p>
+              </div>
+      
+              <div class="buttons d-flex">
+                <button class="golden-button">
+                  Купить
+                </button>
+      
+                <button class="one-click-button">
+                  Купить <br> в 1 клик
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide relatedGood ">
+            <img class='logo' src="../img/logo2.svg" alt="">
+      
+            <div class="swiper-container4">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="../img/poof.png" alt="poof">
+                </div>
+                <div class="swiper-slide">
+                  <img src="../img/poof.png" alt="poof">
+                </div>
+                <div class="swiper-slide">
+                  <img src="../img/poof.png" alt="poof">
+                </div>
+              </div>
+              <div class="custom-pagination4 d-flex-align-center"></div>
+            </div>
+      
+            <img class='line' src="../img/goldenDottenLineHorizontal.svg" alt="">
+            <div class="info">
+              <h5>Подушка "Memory Pillow"</h5>
+              <div class="price d-flex-align-center">
+                <p class="price_current">
+                  2 4950 ₽
+                </p>
+                <p class="price_old">
+                  3 990 ₽
+                </p>
+              </div>
+      
+              <div class="buttons d-flex">
+                <button class="golden-button">
+                  Купить
+                </button>
+      
+                <button class="one-click-button">
+                  Купить <br> в 1 клик
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide relatedGood ">
+            <img class='logo' src="../img/logo2.svg" alt="">
+      
+            <div class="swiper-container4">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="../img/poof.png" alt="poof">
+                </div>
+                <div class="swiper-slide">
+                  <img src="../img/poof.png" alt="poof">
+                </div>
+                <div class="swiper-slide">
+                  <img src="../img/poof.png" alt="poof">
+                </div>
+              </div>
+              <div class="custom-pagination4 d-flex-align-center"></div>
+            </div>
+      
+            <img class='line' src="../img/goldenDottenLineHorizontal.svg" alt="">
+            <div class="info">
+              <h5>Подушка "Memory Pillow"</h5>
+              <div class="price d-flex-align-center">
+                <p class="price_current">
+                  2 4950 ₽
+                </p>
+                <p class="price_old">
+                  3 990 ₽
+                </p>
+              </div>
+      
+              <div class="buttons d-flex">
+                <button class="golden-button">
+                  Купить
+                </button>
+      
+                <button class="one-click-button">
+                  Купить <br> в 1 клик
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide relatedGood ">
+            <img class='logo' src="../img/logo2.svg" alt="">
+      
+            <div class="swiper-container4">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="../img/poof.png" alt="poof">
+                </div>
+                <div class="swiper-slide">
+                  <img src="../img/poof.png" alt="poof">
+                </div>
+                <div class="swiper-slide">
+                  <img src="../img/poof.png" alt="poof">
+                </div>
+              </div>
+              <div class="custom-pagination4 d-flex-align-center"></div>
+            </div>
+      
+            <img class='line' src="../img/goldenDottenLineHorizontal.svg" alt="">
+            <div class="info">
+              <h5>Подушка "Memory Pillow"</h5>
+              <div class="price d-flex-align-center">
+                <p class="price_current">
+                  2 4950 ₽
+                </p>
+                <p class="price_old">
+                  3 990 ₽
+                </p>
+              </div>
+      
+              <div class="buttons d-flex">
+                <button class="golden-button">
+                  Купить
+                </button>
+      
+                <button class="one-click-button">
+                  Купить <br> в 1 клик
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class='feedbacks'>
+
+    <div class="feedbacks__bg"></div>
+
+    <div class="container">
+      <h4>Отзывы</h4>
+
+      <div class="swiper-container6">
+        <div class="custom-arrow3">
+          <img class='prev' src="../img/arrowPrev3.svg" alt="">
+          <img class='next' src="../img/arrowNext3.svg" alt="">
+        </div>
+        <div class="swiper-wrapper">
+          <div class="feedback swiper-slide">
+            <div class="author d-flex">
+            <div class="pic">
+              <img src="../img/unknown.png" alt="">
+            </div>
+            <div class="info">
+            <p class="name">Мария Иванова</p>
+            <span>Матрас "Extra Strong"</span>
+            <div class="mark">
+              <img src="../img/filledStar.svg" alt="">
+              <img src="../img/filledStar.svg" alt="">
+              <img src="../img/filledStar.svg" alt="">
+              <img src="../img/filledStar.svg" alt="">
+              <img src="../img/filledStar.svg" alt="">
+
+              / 
+
+              4,9 из 5
+            </div>
+          </div>
+          <a href='#' class="link"><img src="../img/instaIcon.svg" alt=""></a>
+        </div>
+        <img class='line' src="../img/goldenWhiteDottenLine.svg" alt="">
+        <div class="content">
+          <p>
+            Боялся, но пересилил себя. Сначала пугали и цены, и отзывы, и сам сайт чем-то пугал, но всё же решил рискнуть, и проверить всё это дело на подлинность. Но на моё удивление, и заказ приняли быстро, и телефон привезли нормальный, не битый, не пересобранный, и даже оригинальный. Возможно, я попал в 10 тку и мне повезло, но думаю, что все люди из отзывов так же удивились увиденному. Могу сказать столько спасибо. Спасибо.
+          </p>
+        </div>
+          </div>
+
+          <div class="feedback swiper-slide">
+            <div class="author d-flex">
+            <div class="pic">
+              <img src="../img/unknown.png" alt="">
+            </div>
+            <div class="info">
+            <p class="name">Петр Свиридов</p>
+            <span>Матрас "Extra Strong"</span>
+            <div class="mark">
+              <img src="../img/filledStar.svg" alt="">
+              <img src="../img/filledStar.svg" alt="">
+              <img src="../img/filledStar.svg" alt="">
+              <img src="../img/filledStar.svg" alt="">
+              <img src="../img/filledStar.svg" alt="">
+
+              / 
+
+              4,9 из 5
+            </div>
+          </div>
+          <a href='#' class="link"><img src="../img/instaIcon.svg" alt=""></a>
+        </div>
+        <img class='line' src="../img/goldenWhiteDottenLine.svg" alt="">
+        <div class="content">
+          <p>
+            Но на моё удивление, и заказ приняли быстро, и телефон привезли нормальный, не битый, не пересобранный, и даже оригинальный. Возможно, я попал в 10тку и мне повезло, но думаю, что все люди из отзывов так же удивились увиденному. Могу сказать столько спасибо. Спасибо.
+          </p>
+        </div>
+          </div>
+
+          <div class="feedback swiper-slide">
+            <div class="author d-flex">
+            <div class="pic">
+              <img src="../img/unknown.png" alt="">
+            </div>
+            <div class="info">
+            <p class="name">Светлана Петрова</p>
+            <span>Матрас "Extra Strong"</span>
+            <div class="mark">
+              <img src="../img/filledStar.svg" alt="">
+              <img src="../img/filledStar.svg" alt="">
+              <img src="../img/filledStar.svg" alt="">
+              <img src="../img/filledStar.svg" alt="">
+              <img src="../img/filledStar.svg" alt="">
+
+              / 
+
+              4,9 из 5
+            </div>
+          </div>
+          <a href='#' class="link"><img src="../img/instaIcon.svg" alt=""></a>
+        </div>
+        <img class='line' src="../img/goldenWhiteDottenLine.svg" alt="">
+        <div class="content">
+          <p>
+            Боялся, но пересилил себя. Сначала пугали и цены, и отзывы, и сам сайт чем-то пугал, но всё же решил рискнуть, и проверить всё это дело на подлинность. Но на моё удивление, и заказ приняли быстро, и телефон привезли нормальный, не битый, не пересобранный, и даже оригинальный. Возможно, я попал в 10тку и мне повезло, но думаю, что все люди из отзывов так же удивились увиденному. Могу сказать столько спасибо. Спасибо.
+          </p>
+        </div>
+          </div>
+
+          <div class="feedback swiper-slide">
+            <div class="author d-flex">
+            <div class="pic">
+              <img src="../img/unknown.png" alt="">
+            </div>
+            <div class="info">
+            <p class="name">Мария Иванова</p>
+            <span>Матрас "Extra Strong"</span>
+            <div class="mark">
+              <img src="../img/filledStar.svg" alt="">
+              <img src="../img/filledStar.svg" alt="">
+              <img src="../img/filledStar.svg" alt="">
+              <img src="../img/filledStar.svg" alt="">
+              <img src="../img/filledStar.svg" alt="">
+
+              / 
+
+              4,9 из 5
+            </div>
+          </div>
+          <a href='#' class="link"><img src="../img/instaIcon.svg" alt=""></a>
+        </div>
+        <img class='line' src="../img/goldenWhiteDottenLine.svg" alt="">
+        <div class="content">
+          <p>
+            Боялся, но пересилил себя. Сначала пугали и цены, и отзывы, и сам сайт чем-то пугал, но всё же решил рискнуть, и проверить всё это дело на подлинность. Но на моё удивление, и заказ приняли быстро, и телефон привезли нормальный, не битый, не пересобранный, и даже оригинальный. Возможно, я попал в 10 тку и мне повезло, но думаю, что все люди из отзывов так же удивились увиденному. Могу сказать столько спасибо. Спасибо.
+          </p>
+        </div>
+          </div>
+
+          <div class="feedback swiper-slide">
+            <div class="author d-flex">
+            <div class="pic">
+              <img src="../img/unknown.png" alt="">
+            </div>
+            <div class="info">
+            <p class="name">Мария Иванова</p>
+            <span>Матрас "Extra Strong"</span>
+            <div class="mark">
+              <img src="../img/filledStar.svg" alt="">
+              <img src="../img/filledStar.svg" alt="">
+              <img src="../img/filledStar.svg" alt="">
+              <img src="../img/filledStar.svg" alt="">
+              <img src="../img/filledStar.svg" alt="">
+
+              / 
+
+              4,9 из 5
+            </div>
+          </div>
+          <a href='#' class="link"><img src="../img/instaIcon.svg" alt=""></a>
+        </div>
+        <img class='line' src="../img/goldenWhiteDottenLine.svg" alt="">
+        <div class="content">
+          <p>
+            Боялся, но пересилил себя. Сначала пугали и цены, и отзывы, и сам сайт чем-то пугал, но всё же решил рискнуть, и проверить всё это дело на подлинность. Но на моё удивление, и заказ приняли быстро, и телефон привезли нормальный, не битый, не пересобранный, и даже оригинальный. Возможно, я попал в 10 тку и мне повезло, но думаю, что все люди из отзывов так же удивились увиденному. Могу сказать столько спасибо. Спасибо.
+          </p>
+        </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="one-click-button">
+        Показать все
+      </button>
+
+
+    </div>
+  </section>
+
+  <footer>
+    <img class='line' src="../img/footerGoldenDottenLine.svg" alt="">
+
+    <div class="container d-flex">
+      <div class="contacts">
+        <img src="../img/logo2.svg" alt="">
+        <ul>
+          <li>
+            <img src="../img/marker.svg" alt="">
+            <span>Курчатова, <br> 16 Комсомольский пр., 47</span>
+          </li>
+          <li>
+            <img src="../img/convertFooterIcon.svg" alt="">
+            <span>email@mail.com</span>
+          </li>
+          <li> <img src="../img/phoneFooterIcon.svg" alt=""> 
+            <span>8 800 555 3535</span> </li>
+        </ul>
+      </div>
+      <div class="menus">
+        <div class='menu'>
+          <p>Компания</p>
+          <ul>
+            <li><a href="#">О компании</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Магазины</a></li>
+            <li><a href="#">Сотрудничество</a></li>
+            <li><a href="#">Вакансии</a></li>
+          </ul>
+        </div>
+        <div class='menu'>
+          <p>Каталог</p>
+          <ul>
+            <li><a href="#">Матрасы</a></li>
+            <li><a href="#">Кровати</a></li>
+            <li><a href="#">Наматрасники</a></li>
+            <li><a href="#">Подушки</a></li>
+            <li><a href="#">Одеяла</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="subscribe">
+        <p>Подписывайтесь на <br> носоти и акции </p>
+        <form class="contact">
+          <input type="text" placeholder="Ваш email">
+          <button class='golden-button'>
+            Подписаться
+          </button>
+        </form>
+        <div class='social'>
+          <a href="#"><img src="../img/vkFooter.svg" alt=""></a>
+          <a href="#"><img src="../img/faceFooter.svg" alt=""></a>
+          <a href="#"><img src="../img/instaFooter.svg" alt=""></a>
+        </div>
+      </div>
+    </div>
+    <div class="bottom d-flex-align-center">
+      <p>
+        © Salamon Premium, 2020
+      </p>
+    </div>
+  </footer>
+    
+
+  <script src='../js/scripts/slider-swiper.js'></script>
+</body>
+</html>

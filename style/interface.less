@@ -1,0 +1,43 @@
+button{
+  border-radius: 50px;
+  outline: none !important;
+}
+
+.golden-button{
+  background: linear-gradient(90deg, #DBC266 1.32%, #AE8930 47.06%, #CFA43D 89.38%, #F5E38B 100%);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 500px;
+  color: #fff;
+  cursor: pointer;
+
+  overflow: none;
+
+  border: none;
+}
+
+.toggle-button{
+  border: 1px solid #F5E38B ;
+  width: 185px;
+  height: 56px;
+  border-radius: 500px;
+  margin-right: 15px;
+  background: none;
+
+  text-transform: uppercase;
+
+  &-active{
+    background: linear-gradient(0deg, #1B2232, #1B2232), #2958F9;
+    color: #FFFFFF;
+    border: none;
+  }
+}
+
+.one-click-button{
+  border-radius: 50px;
+  background: none;
+  border: 2px solid @goldColor;
+  color: @goldColor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

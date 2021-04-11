@@ -1,0 +1,135 @@
+footer{
+  height: 376px;
+  position: relative;
+  background: linear-gradient(0deg, rgba(34, 25, 4, 0.5), rgba(34, 25, 4, 0.5)), linear-gradient(0deg, #1B2232, #1B2232);
+  .container{
+    height: 100%;
+  }
+  .line{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left:0;
+  }
+  .contacts{
+    width: 32%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    ul {
+      padding-left: 0;
+      color: #fff;
+       li {
+        display: flex;
+        list-style-type: none;
+        margin-bottom: 18px;
+        &:first-child{
+          align-items: flex-start; 
+        }
+        span{
+          margin-top: 0;
+          margin-bottom: 0;
+          font-size: 14px;
+          line-height: 24px;
+        }
+        img{
+          margin-right: 18px;
+        }
+    }
+    }
+  }
+  .menus{
+    width: 45%;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    display: flex;
+    p{
+      color: #fff;
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: 600;
+      margin-bottom: 40px;
+    }
+    ul{
+      padding-left: 0;
+      li{
+        list-style-type: none;
+        margin-bottom: 14px;
+        a{
+          color: #fff;
+          font-size: 14px;
+          font-weight: 300;
+          text-decoration: none;
+        }
+      }
+    }
+
+  }
+  .subscribe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 23%;
+    p{
+      color: #fff;
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: 600;
+      margin-bottom: 40px;
+    }
+    input{
+      display: block;
+      padding-left: 32px;
+      background: none;
+      height: 100%;
+      border: none;
+      outline: none;
+      width: 100px;
+      @media (max-width:  @smallDesctopResolution) {
+        padding-left: 20px;
+        width: calc( 100% - 20px);
+      }
+    }
+    .contact{
+      height: 48px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: #4F4F4F;
+      border: 1px solid #4F4F4F;
+      border-radius: 50px;
+
+      button{
+        padding: 7px 20px;
+        margin-right: 5px;
+        height: 40px;
+        @media (max-width:  @smallDesctopResolution) {
+          width: 50%;
+          font-size: 11px;
+        }
+      }
+    }
+
+    .social{
+      margin-top: 31px;
+      img{
+        margin-right: 16px;
+      }
+    }
+  }
+  .bottom{
+    height: 80px;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(34, 25, 4, 0.8), rgba(34, 25, 4, 0.8)), linear-gradient(0deg, #1B2232, #1B2232), #2958F9;
+    p{
+      color: #fff;
+      font-size: 14px;
+    }
+  }
+}
