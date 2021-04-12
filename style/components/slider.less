@@ -1,4 +1,5 @@
 @left: 48px;
+@mobileLeft: 25px;
 
 .slider{
   width: 832px;
@@ -11,6 +12,9 @@
   .red-mark, &__info, &__btn, .blue-mark{
     position: absolute;
     left: @left;
+    @media (max-width: @mobileResolution) {
+      left: @mobileLeft;
+    }
   }
 
   .swiper-slide{
@@ -43,6 +47,10 @@
     right: 50px;
     z-index: 10;
 
+    @media (max-width: @mobileResolution) {
+      display: none;
+    }
+
     .next{
       margin-left: 14px;
     }
@@ -56,14 +64,37 @@
 
   &__info{
     top: 153px;
+    
     h2{
       font-size: 56px;
       margin-bottom: 0;
       margin-top: 0;
+      @media (max-width: @mobileResolution){
+        font-size: 40px;
+        line-height: 49px;
+      }
+    }
+
+    @media (max-width: @mobileResolution){
+      width: 90%;
+       p, h3{
+        width: 244px;
+      }
+      h2{
+        width: 90%;
+      }
+      p{
+        font-size: 14px;
+        line-height: 24px;
+      }
     }
 
     h3{
       font-size: 36px;
+      @media (max-width: @mobileResolution) {
+        font-size: 24px;
+        line-height: 29px;
+      }
     }
 
     h2, p, h3{
@@ -76,6 +107,9 @@
     width: 287px;
     height: 56px;
     padding: 20px;
+    @media (max-width: @mobileResolution) {
+      width: 244px;
+    }
   }
 }
 
@@ -118,6 +152,12 @@
 
   .pagination-regular{
     margin-right: 20px;
+  }
+
+  @media (max-width: @mobileResolution){
+    width: 100%;
+    padding-left: 0;
+    justify-content: center;
   }
 }
 
@@ -182,6 +222,10 @@
 
   .swiper-slide{
     border-radius: 12px;
+    @media (max-width: @mobileResolution){
+      background-size: cover;
+    }
+    
   }
 
   .custom-arrow3{
@@ -223,6 +267,9 @@
     right: 0;
 
     top: -100px;
+    @media (max-width: @mobileResolution) {
+      top: -75px;
+    }
   }
 }
 
@@ -238,5 +285,34 @@
     position: absolute;
     right: 0;
     top: -100px;
+    @media (max-width: @mobileResolution) {
+      top: -75px;
+    }
+  }
+}
+
+.swiper-container7{
+  width: calc(100% - 20px);
+  padding-left: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+
+  .swiper-wrapper{
+    width: 171px;
+  }
+
+  .custom-arrow3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 11;
+    width: 190px;
+    height: 52px;
+    background: #fff;
+    img{
+      height: 16px;
+    }
   }
 }

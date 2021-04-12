@@ -8,9 +8,16 @@
     position: absolute;
     width: 100%;
     top: @headerTopHeight;
+    @media (max-width: @mobileResolution){
+      top: calc( @headerTopHeight + 8px );
+    }
   }
 
   &__top{
+
+    @media (max-width: @mobileResolution){
+      padding-top: 8px;
+    }
 
     height: @headerTopHeight;
     ul{
@@ -31,9 +38,26 @@
           }
         }
       }
+
+    .phone{
+      display: flex;
+      align-items: center;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 18px;
+      img{
+        margin-right: 8px;
+        }
+      }
+      button{
+        padding: 5px 10px;
+      }
     }
   &__base{
     margin-top: 15px;
+    .burger-toggle{
+      margin-right: 13px;
+    }
   }
   &__logos{
     display: flex;

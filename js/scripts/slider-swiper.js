@@ -15,9 +15,9 @@ const swiper = new Swiper('.swiper-container', {
     prevEl: '.slider__arrows .prev',
   },
 
-  autoplay: {
-    delay : '5000'
-  }
+  // autoplay: {
+  //   delay : '5000'
+  // }
 
 });
 
@@ -62,7 +62,7 @@ const swiper4 = new Swiper('.swiper-container4', {
 })
 
 const swiper5 = new Swiper('.swiper-container5', {
-  slidesPerView: 4,
+  slidesPerView: 1,
   slidesOffsetAfter: 2,
   spaceBetween: 31,
   navigation: {
@@ -70,11 +70,32 @@ const swiper5 = new Swiper('.swiper-container5', {
     prevEl: '.custom-arrow3 .prev'
   },
 
+  breakpoints: {
+    992 : {
+      slidesPerView: 4
+    }
+  }
+
 })
 
 const swiper6 = new Swiper('.swiper-container6', {
-  slidesPerView: 3,
+  slidesPerView: 1,
   spaceBetween: 32,
+  navigation: {
+    nextEl: '.custom-arrow3 .next',
+    prevEl: '.custom-arrow3 .prev'
+  },
+  breakpoints : {
+    992 : {
+      slidesPerView: 3
+    }
+  }
+})
+
+const swiper7 = new Swiper('.swiper-container7', {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  width: 171,
   navigation: {
     nextEl: '.custom-arrow3 .next',
     prevEl: '.custom-arrow3 .prev'

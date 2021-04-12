@@ -8,8 +8,10 @@
   }
   &__conds{
     padding-top: 32px;
+    @media (max-width: @mobileResolution) {
+      flex-wrap: wrap;
+    }
   }
-
   &__cond{
     width: calc(184px - 16px * 2);
     height: calc(160px - 23px * 2);
@@ -19,6 +21,11 @@
 
     @media (max-width: @smallDesctopResolution) {
       width: calc(23.5% - 16px * 2);
+    }
+
+    @media (max-width: @mobileResolution) {
+      width: calc(48.5% - 16px * 2);
+      margin-bottom: 12px;
     }
 
     display: flex;
@@ -40,6 +47,18 @@
       @media (max-width:@smallDesctopResolution ){
         font-size: 10px;
       }
+    }
+  }
+
+  @media (max-width: @mobileResolution){
+    &__slider, &__conds {
+      width: 100%;
+    }
+  }
+
+  .container{
+    @media (max-width: @mobileResolution){
+      flex-direction: column-reverse;
     }
   }
 }

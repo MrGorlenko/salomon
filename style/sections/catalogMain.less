@@ -11,6 +11,16 @@
 
     margin-bottom: 50px;
 
+    @media (max-width: @smallDesctopResolution) {
+      height: 112px;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      border-radius: 20px;
+    } 
+
     .sorting{
       position: absolute;
       right: 32px;
@@ -32,6 +42,12 @@
     @media (max-width: @smallDesctopResolution) {
       button{
         width: 15%;
+      }
+    }
+    @media (max-width: @mobileResolution) {
+      button{
+        padding-top: 16px;
+        padding-bottom: 16px;
       }
     }
   }
