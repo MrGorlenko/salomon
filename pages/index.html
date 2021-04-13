@@ -17,14 +17,9 @@
 </head>
 <body class='index'>
   <header class='header'>
-    <!-- <div class="container"> -->
       <div class="header__top">
 
         <div class="container d-flex-align-between">
-          <!-- <div class="d-lg-none phone">
-            <img src="../img/phoneFooterIcon.svg" alt="phone">
-            8 800 600 50 50
-          </div> -->
           <div class='d-lg-none'></div>
   
           <button class="golden-button d-lg-none">
@@ -88,16 +83,62 @@
           </div>
         </div>
       </div>
-    <!-- </div> -->
 
     <nav class="nav">
       <div class="container d-flex justify-content-between">
         <div class='d-flex-align-between'>
           <ul class='d-flex-align-between'>
-            <li>Матрасы <img src="../img/arrowDown.svg" alt=""> </li>
-            <li class='d-sm-none'>Кровати <img src="../img/arrowDown.svg" alt=""> </li>
-            <li class='d-sm-none'>Наматрасники <img src="../img/arrowDown.svg" alt=""> </li>
-            <li class='d-sm-none'>Подушки <img src="../img/arrowDown.svg" alt=""> </li>
+            <li>Матрасы
+
+              <ul class='innerList'>
+                <li> <a href="#">Матрас 1</a></li>
+                <li> <a href="#">Матрас 2</a></li>
+                <li> <a href="#">Матрас 3</a></li>
+                <li> <a href="#">Матрас 4</a></li>
+                <li> <a href="#">Матрас 5</a></li>
+                <li> <a href="#">Матрас 6</a></li>
+                <li> <a href="#">Матрас 7</a></li>
+              </ul>
+
+               <img src="../img/arrowDown.svg" alt=""> </li>
+            <li class='d-sm-none'>Кровати
+              <ul class='innerList'>
+                <li> <a href="#">Кровати 1</a></li>
+                <li> <a href="#">Кровати 2</a></li>
+                <li> <a href="#">Кровати 3</a></li>
+                <li> <a href="#">Кровати 4</a></li>
+                <li> <a href="#">Кровати 5</a></li>
+                <li> <a href="#">Кровати 6</a></li>
+                <li> <a href="#">Кровати 7</a></li>
+              </ul>
+
+              <img src="../img/arrowDown.svg" alt=""> </li>
+            <li class='d-sm-none'>Наматрасники
+              
+              <ul class='innerList'>
+                <li> <a href="#">Надматрасни 1</a></li>
+                <li> <a href="#">Надматрасни 2</a></li>
+                <li> <a href="#">Надматрасни 3</a></li>
+                <li> <a href="#">Надматрасни 4</a></li>
+                <li> <a href="#">Надматрасни 5</a></li>
+                <li> <a href="#">Надматрасни 6</a></li>
+                <li> <a href="#">Надматрасни 7</a></li>
+              </ul>
+
+              <img src="../img/arrowDown.svg" alt=""> </li>
+            <li class='d-sm-none'>Подушки
+              
+              <ul class='innerList'>
+                <li> <a href="#">Подушки 1</a></li>
+                <li> <a href="#">Подушки 2</a></li>
+                <li> <a href="#">Подушки 3</a></li>
+                <li> <a href="#">Подушки 4</a></li>
+                <li> <a href="#">Подушки 5</a></li>
+                <li> <a href="#">Подушки 6</a></li>
+                <li> <a href="#">Подушки 7</a></li>
+              </ul>
+
+              <img src="../img/arrowDown.svg" alt=""> </li>
           </ul>
         </div>
 
@@ -123,11 +164,25 @@
 
         <ul class='search__selects'>
           <li class='d-flex align-items-center'> 
-            <img src="../img/sizeIcon.svg" alt=""> Размер</li>
+            <div><img src="../img/sizeIcon.svg" alt=""> Размер</div>
+            
+          
+            <div onClick='select1.changeState.call(select1)' class="select select-white">
+              Выбрать
+
+              <ul class='unactive'>
+                <li>option 1</li>
+                <li>option 2</li>
+                <li>option 3</li>
+              </ul>
+
+            </div>
+          </li>
+          <li class='d-flex align-items-center'>
+            <div><img src="../img/featherIcon.svg" alt=""> Жесткость</div> 
+            </li>
           <li class='d-flex align-items-center'> 
-            <img src="../img/featherIcon.svg" alt=""> Жесткость</li>
-          <li class='d-flex align-items-center'> 
-            <img src="../img/heightIcon.svg" alt=""> Высота</li>
+            <div><img src="../img/heightIcon.svg" alt=""> Высота</div></li>
         </ul>
 
         <button class='search__btn golden-button'>
@@ -1151,5 +1206,6 @@
     
 
   <script src='../js/scripts/slider-swiper.js'></script>
+  <script src='../js/scripts/select.js'></script>
 </body>
 </html>
