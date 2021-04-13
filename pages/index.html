@@ -17,42 +17,46 @@
 </head>
 <body class='index'>
   <header class='header'>
-    <hr>
-    <div class="container">
-      <div class="header__top d-flex-align-between">
+    <!-- <div class="container"> -->
+      <div class="header__top">
 
-        <div class="d-lg-none phone">
-          <img src="../img/phoneFooterIcon.svg" alt="phone">
-          8 800 600 50 50
+        <div class="container d-flex-align-between">
+          <!-- <div class="d-lg-none phone">
+            <img src="../img/phoneFooterIcon.svg" alt="phone">
+            8 800 600 50 50
+          </div> -->
+          <div class='d-lg-none'></div>
+  
+          <button class="golden-button d-lg-none">
+            Заказать звонок
+          </button>
+  
+          <div class='header__logos d-sm-none'>
+            <img src="../img/marker.svg" alt="marker">
+            <span>Новосибирск, ул. Мичурина, д. 12а 1 этаж</span>
+          </div>
+  
+          <ul class='d-sm-none'>
+            <li><a href="#">Адреса магазинов</a></li>
+            <li><a href="#">Гарантии</a></li>
+            <li><a href="#">Отзывы</a></li>
+            <li><a href="#">Оплата и доставка</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
         </div>
-
-        <button class="golden-button d-lg-none">
-          Заказать звонок
-        </button>
-
-        <div class='header__logos d-sm-none'>
-          <img src="../img/marker.svg" alt="marker">
-          <span>Новосибирск, ул. Мичурина, д. 12а 1 этаж</span>
-        </div>
-
-        <ul class='d-sm-none'>
-          <li><a href="#">Адреса магазинов</a></li>
-          <li><a href="#">Гарантии</a></li>
-          <li><a href="#">Отзывы</a></li>
-          <li><a href="#">Оплата и доставка</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
 
       </div>
-      <div class="header__base d-flex-align-between">
+      <div class="header__base">
+        <div class="container d-flex-align-between">
 
-        <img class='d-lg-none burger-toggle' src="../img/burger.svg" alt="">
+          <img class='d-lg-none burger-toggle' src="../img/burger.svg" alt="">
 
-        <img class='logo' src="../img/logo.svg" alt="logo">
+          <img class='logo' src="../img/logo.svg" alt="logo">
 
-        <div class='d-flex-align-between'>
-          <div class="header__phone d-sm-none">
-            <img src="../img/phone-icon.svg" alt="phone-icon">
+          <div class='d-flex-align-between'>
+          <div class="header__phone ">
+            <img class='d-lg-none' src="../img/phoneFooterIcon.svg" alt="phone">
+            <img class='d-sm-none' src="../img/phone-icon.svg" alt="phone-icon">
             <a href="tel:#">
               8 800 600 50 50
             </a>
@@ -81,9 +85,10 @@
             <img src="../img/basket.svg" alt="basket">
             <div class='d-flex-align-center'>0</div>
           </a>
+          </div>
         </div>
       </div>
-    </div>
+    <!-- </div> -->
 
     <div class="nav">
       <div class="container d-flex justify-content-between">

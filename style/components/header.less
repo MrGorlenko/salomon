@@ -4,26 +4,23 @@
 
   background-color: #fff;
   
-  hr{
-    position: absolute;
-    width: 100%;
-    top: @headerTopHeight;
-    @media (max-width: @mobileResolution){
-      top: calc( @headerTopHeight + 8px );
-    }
-  }
-
   &__top{
+
+    border-bottom: 1px solid #EEEEEE;
 
     @media (max-width: @mobileResolution){
       padding-top: 8px;
+      padding-bottom: 8px;
     }
 
-    height: @headerTopHeight;
+    // height: @headerTopHeight;
     ul{
       display: flex;
       justify-content: space-between;
-      width: 65%;
+      width: 62%;
+      @media (max-width: @smallDesctopResolution){
+        width: 65%;
+      }
       li{
         list-style-type: none;
         cursor: pointer;
@@ -83,16 +80,35 @@
       text-decoration: none;
       font-weight: 600px;
       margin-left: 15px;
+      @media (max-width: @smallDesctopResolution){
+        font-size: 21px;
+      }
+      @media (max-width: @mobileResolution){
+        font-size: 15px;
+        line-height: 18px;
+      }
+      
+    }
+    @media (max-width: @mobileResolution){
+      position: absolute;
+      left: 7px;
+      top: 16px;
+
     }
   }
   &__button{
     margin-left: 32px;
     border-radius: 500px;
-    filter: drop-shadow(0px 8px 20px rgba(0,0,0,.08));
+    border: 2px solid @goldColor;
+    // filter: drop-shadow(0px 8px 20px rgba(0,0,0,.08));
     padding: 16px 27px;
     text-transform: uppercase;
     color: #1B2232;
     background: none;
+    @media (max-width: @smallDesctopResolution){
+      width: 173px;
+      font-size: 11px;
+    }
   }
 
   &__basket{
