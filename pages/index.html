@@ -44,7 +44,7 @@
       <div class="header__base">
         <div class="container d-flex-align-between">
 
-          <img class='d-lg-none burger-toggle' src="../img/burger.svg" alt="">
+          <img id='burger-toggle' class='d-lg-none burger-toggle' src="../img/burger.svg" alt="">
 
           <img class='logo' src="../img/logo.svg" alt="logo">
 
@@ -148,11 +148,70 @@
     </nav>
   </header>
 
-  <div class="burger">
-    <img src="../img/logo2.svg" alt="">
+  <div id='burger' class="burger burger__off">
+    <img id='burger-close' src="../img/burgerClose.svg" alt="" class="close">
+    <img class='logo' src="../img/logo2.svg" alt="">
+    <div class='burger__address'>
+      <img src="../img/marker.svg" alt="marker">
+      <span>Новосибирск, ул. Мичурина, д. 12а 1 этаж</span>
+    </div>
+    <ul class='firstLvl'>
+      <li class='first on'>
+        <span>Матрасы</span>  
+        <ul class="secondLvl secondLvlOn">
+          <li>Матрас 1</li>
+          <li>Матрас 1</li>
+          <li>Матрас 1</li>
+        </ul>
+      </li>
+
+      <li class='first off'>
+        <span>Кровати</span> 
+        <ul class="secondLvl secondLvlOff">
+          <li>Матрас 1</li>
+          <li>Матрас 1</li>
+          <li>Матрас 1</li>
+        </ul>
+      </li>
+
+      <li class='first off'>
+        <span>Подушки</span> 
+        <ul class="secondLvl secondLvlOff">
+          <li>Матрас 1</li>
+          <li>Матрас 1</li>
+          <li>Матрас 1</li>
+        </ul>
+      </li>
+
+      <li class='first off'>
+        <span>Надматрасни</span> 
+        <ul class="secondLvl secondLvlOff">
+          <li>Матрас 1</li>
+          <li>Матрас 1</li>
+          <li>Матрас 1</li>
+        </ul>
+      </li>
+
+      <li class='first off'>
+        <span>Одеяла</span> 
+        <ul class="secondLvl secondLvlOff">
+          <li>Матрас 1</li>
+          <li>Матрас 1</li>
+          <li>Матрас 1</li>
+        </ul>
+      </li>
+    </ul>
+
+    <ul class="links">
+      <li><a href="#">Гарантии</a></li>
+      <li><a href="#">Ремонт iPhones</a></li>
+      <li><a href="#">Отзывы</a></li>
+      <li><a href="#">Оплата и доставка</a></li>
+      <li><a href="#">Контакты</a></li>
+    </ul>
   </div>
 
-  <section class='hero'>
+  <section class='section hero'>
 
     <div class="container d-flex justify-content-between">
       <div class="search d-flex flex-direction-column align-items-center">
@@ -327,7 +386,7 @@
 
   </section>
 
-  <section class='catalogMain'>
+  <section class='section catalogMain'>
     <div class="container">
       <div id='catalogMain' class="catalog catalog-wrapper d-sm-none">
         <button class="toggle-button">
@@ -664,7 +723,7 @@
     </div>
   </section>
 
-  <section class="hotOffers">
+  <section class="section hotOffers">
 
     <div class="container">
       <h4>Предложения <span>недели</span></h4>
@@ -700,7 +759,7 @@
 
   </section>
 
-  <section class='howToOrder'>
+  <section class='section howToOrder'>
     <div class="container">
       <h4>Как заказать матрас</h4>
 
@@ -745,7 +804,7 @@
     </div>
   </section>
 
-  <section class="relatedGoods">
+  <section class="section relatedGoods">
     <div class="container">
       <h4>Сопутсвующие товары</h4>
       <div class="swiper-container5">
@@ -1005,7 +1064,7 @@
     </div>
   </section>
 
-  <section class='feedbacks'>
+  <section class='section feedbacks'>
 
     <div class="feedbacks__bg"></div>
 
@@ -1178,7 +1237,7 @@
     </div>
   </section>
 
-  <footer class=' '>
+  <footer class='section '>
     <img class='line d-sm-none' src="../img/footerGoldenDottenLine.svg" alt="">
     <img class='line d-lg-none' src="../img/goldenDottenLineHorizontal.svg" alt="">
 
