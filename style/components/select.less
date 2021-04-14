@@ -5,25 +5,32 @@
 }
 
 .select{
-  padding: 15px 27px;
+  padding: 11px 27px;
   text-transform: capitalize;
   font-size: 13px;
   cursor: pointer;
 
   position: relative;
 
+  @media (max-width: @smallDesctopResolution){
+    padding: 11px 8px;
+    font-size: 10px;
+  }
 
   &:after {
     position: absolute;
     display: block;
     content: '';
-    top: 20px;
+    top: 16px;
     right: 21px;
     width: 9px;
     height: 9px;
     background-repeat: no-repeat;
     
     background-image: url(../img/SelectArrow.svg);
+    @media (max-width: @smallDesctopResolution){
+      right: 12px;
+    }
   }
 
 
@@ -43,6 +50,8 @@
     top: 35px;
     padding-left: 0;
     width: 100%;
+    background: black;
+    z-index: 2;
     li{
       height: auto;
       padding-left: 0;
@@ -56,6 +65,8 @@
   border-radius: 50px;
   color: #8E9BA7;
   width: calc(149px - 54px);
-
+  @media (max-width: @smallDesctopResolution){
+    width: 73px;
+  }
   
 }

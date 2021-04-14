@@ -100,7 +100,7 @@
                 <li> <a href="#">Матрас 7</a></li>
               </ul>
 
-               <img src="../img/arrowDown.svg" alt=""> </li>
+               <img class='d-sm-none' src="../img/arrowDown.svg" alt=""> </li>
             <li class='d-sm-none'>Кровати
               <ul class='innerList'>
                 <li> <a href="#">Кровати 1</a></li>
@@ -142,10 +142,15 @@
           </ul>
         </div>
 
-        <img src="../img/sale.png" alt="">
+        <img class='d-lg-none' src="../img/распродажа кнопка.png" alt="">
+        <img class='d-sm-none' src="../img/sale.png" alt="">
       </div>
     </nav>
   </header>
+
+  <div class="burger">
+    <img src="../img/logo2.svg" alt="">
+  </div>
 
   <section class='hero'>
 
@@ -167,22 +172,55 @@
             <div><img src="../img/sizeIcon.svg" alt=""> Размер</div>
             
           
-            <div onClick='select1.changeState.call(select1)' class="select select-white">
-              Выбрать
+            <div onClick='select1.changeState.call(select1)' 
+            class="select select1 select-white">
+              <span>Выбрать</span> 
 
               <ul class='unactive'>
-                <li>option 1</li>
-                <li>option 2</li>
-                <li>option 3</li>
+                <li onclick="select1.selectOption('Маленький')">
+                  Маленький</li>
+                <li onclick="select1.selectOption('Средний')">
+                  Средний</li>
+                <li onclick="select1.selectOption('Большой')">
+                  Большой</li>
               </ul>
 
             </div>
           </li>
           <li class='d-flex align-items-center'>
-            <div><img src="../img/featherIcon.svg" alt=""> Жесткость</div> 
+            <div><img src="../img/featherIcon.svg" alt=""> Жесткость
+            </div> 
+
+            <div onClick='select2.changeState.call(select2)' 
+            class="select select2 select-white">
+              <span>Выбрать</span> 
+
+              <ul class='unactive'>
+                <li onclick="select2.selectOption('Жесткий')">
+                  Жесткий</li>
+                <li onclick="select2.selectOption('Мягкий')">
+                  Мягкий</li>
+              </ul>
+
+            </div>
             </li>
           <li class='d-flex align-items-center'> 
-            <div><img src="../img/heightIcon.svg" alt=""> Высота</div></li>
+            <div><img src="../img/heightIcon.svg" alt=""> Высота</div>
+        
+            <div onClick='select3.changeState.call(select3)' 
+            class="select select3 select-white">
+              <span>Выбрать</span> 
+
+              <ul class='unactive'>
+                <li onclick="select3.selectOption('Высокий')">
+                  Высокий</li>
+                <li onclick="select3.selectOption('Низкий')">
+                  Низкий</li>
+              </ul>
+
+            </div>
+        
+          </li>
         </ul>
 
         <button class='search__btn golden-button'>
@@ -291,7 +329,7 @@
 
   <section class='catalogMain'>
     <div class="container">
-      <div class="catalog d-sm-none">
+      <div id='catalogMain' class="catalog catalog-wrapper d-sm-none">
         <button class="toggle-button">
           Хиты продаж
         </button>
@@ -377,7 +415,7 @@
                 </li>
                 <li class='d-flex-align-between'> 
                   <div><img src="../img/heightIcon.svg" alt=""> Высота</div>
-                  <div class="buttonsWidget">
+                  <div id='buttonsWidget1' class="buttonsWidget">
                     <button class='active'>
                       20 см
                     </button>
@@ -469,7 +507,7 @@
                 </li>
                 <li class='d-flex-align-between'> 
                   <div><img src="../img/heightIcon.svg" alt=""> Высота</div>
-                  <div class="buttonsWidget">
+                  <div id='buttonsWidget2' class="buttonsWidget">
                     <button class='active'>
                       20 см
                     </button>
@@ -565,7 +603,7 @@
                 </li>
                 <li class='d-flex-align-between'> 
                   <div><img src="../img/heightIcon.svg" alt=""> Высота</div>
-                  <div class="buttonsWidget">
+                  <div id='buttonsWidget3' class="buttonsWidget">
                     <button class='active'>
                       20 см
                     </button>
@@ -1207,5 +1245,6 @@
 
   <script src='../js/scripts/slider-swiper.js'></script>
   <script src='../js/scripts/select.js'></script>
+  <script src='../js/scripts/main.js'></script>
 </body>
 </html>
