@@ -10,12 +10,14 @@ let switchButtons = function(btns, activeClass){
 };
 
 
-let catalogMain = document.querySelectorAll('#catalogMain button');
+let catalogMain = document.querySelectorAll('#catalogMain button'),
+catalogMainMobile = document.querySelectorAll('#catalogMainMobile button');
 let buttonsWidget1 = document.querySelectorAll('#buttonsWidget1 button'),
 buttonsWidget2 = document.querySelectorAll('#buttonsWidget2 button'),
 buttonsWidget3 = document.querySelectorAll('#buttonsWidget3 button');
 
 switchButtons(catalogMain, 'toggle-button-active')
+switchButtons(catalogMainMobile, 'toggle-button-active')
 switchButtons(buttonsWidget1, 'active')
 switchButtons(buttonsWidget2, 'active')
 switchButtons(buttonsWidget3, 'active')
