@@ -188,6 +188,10 @@
   width: 100%;
 
   bottom: 32px;
+
+  cursor: pointer;
+
+
 }
 
 .pagination-regular2, .pagination-active2, .pagination-regular3{
@@ -203,6 +207,13 @@
 
 .pagination-regular2{
   border: 2px solid #fff;
+  transition: .1s ease;
+  &:hover{
+    border: 3px solid @goldColor;
+    width: 15px;
+    height: 15px;
+    transition: .1s ease;
+  }
 }
 
 .pagination-regular3{

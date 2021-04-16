@@ -5,15 +5,23 @@
   margin-top: 28px;
 
   .container{
+    height: 100%;
     position: relative;
     @media (min-width:1050px){
       img{
         margin-right: -30px;
       }
     }
+
+    @media (min-width: @mobileResolution){
+      .sale{
+        height: 108%;
+      }
+    }
+
     @media (max-width: @mobileResolution){
       img{
-        height: 95%;
+        height: 100%;
         position: absolute;
         top: 0;
         right: 0px;
@@ -49,6 +57,7 @@
       }
 
       .innerList{
+        border-radius: 0 0 6px 6px;
         z-index: 13;
         position: absolute;
         top: 50px;
@@ -65,9 +74,9 @@
         }
         li{
           background-color: #221904;
-          margin-left: 0;
+          margin-left: -9px;
           width: calc( 100% - 5px);
-          padding-left: 5px;
+          padding-left: 9px;
           padding-right: 5px;
           height: 30px;
           border-top: 1px solid #fff;
@@ -88,6 +97,7 @@
           }
           &:last-child{
             border-bottom: none;
+            border-radius: 0 0 6px 6px;
           }
         }
       }

@@ -17,8 +17,9 @@ button{
   transition: color .2s ease;
 
   &:hover{
-    color: #000;
+    color: #fff;
     transition: color .2s ease;
+    background: linear-gradient(90deg, #DBC266 5.32%, #f7ae05 47.06%, #f7ae05 89.38%, #F5E38B 100%);
   }
 }
 
@@ -55,9 +56,11 @@ button{
   justify-content: center;
   align-items: center;
   transition: .2s ease;
+
   &:hover{
-    transition: .2s ease;
-    background: #e4e4e4;
+    color: #fff;
+    transition: color .2s ease;
+    background: linear-gradient(90deg, #DBC266 1.32%, #AE8930 47.06%, #CFA43D 89.38%, #F5E38B 100%);
   }
 }
 
@@ -179,5 +182,23 @@ body{
 .d-sm-none{
   @media (max-width: @mobileResolution) {
     display: none !important;
+  }
+}
+
+@keyframes toffe {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes toffe-reverse {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
   }
 }

@@ -1,6 +1,10 @@
 .hero{
   padding-top: 32px;
 
+  @media (max-width: @mobileResolution){
+    padding-top: 25px;
+  }
+
   &__slider{
     @media (max-width : @smallDesctopResolution) {
       width: 68%;
