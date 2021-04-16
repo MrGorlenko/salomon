@@ -6,9 +6,12 @@
 
   .container{
     position: relative;
-    // overflow: hidden;
+    @media (min-width:1050px){
+      img{
+        margin-right: -30px;
+      }
+    }
     @media (max-width: @mobileResolution){
-      // overflow: hidden;
       img{
         height: 95%;
         position: absolute;
@@ -35,6 +38,10 @@
 
       position: relative;
 
+      @media (max-width: 1600px){
+        font-size: 14px;
+      }
+
       &:hover{
         .innerList{
           display: block;
@@ -49,6 +56,10 @@
         background-color: #221904;
         min-width: 125px;
         display: none;
+        height: auto;
+        -webkit-box-shadow: 0px 35px 39px 12px rgba(0, 0, 0, 0.43);
+        -moz-box-shadow: 0px 35px 39px 12px rgba(0, 0, 0, 0.43);
+        box-shadow: 0px 35px 39px 12px rgba(0, 0, 0, 0.43);
         &:hover{
           display: block;
         }
@@ -65,6 +76,7 @@
           a{
             color: #fff;
             text-decoration: none;
+            font-size: 12px;
           }
 
           &:hover{
