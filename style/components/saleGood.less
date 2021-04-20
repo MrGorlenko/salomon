@@ -135,6 +135,13 @@
       display: flex;
       align-items: center;
       color: #fff;
+      padding: 0;
+      span{
+        text-transform: uppercase;
+      }
+      &::after{
+        top: 18px;
+      }
     }
 
     .buttonsWidget{
@@ -146,6 +153,12 @@
         border: 1.5px solid #B0BDC9;
         background: none;
         color: #B0BDC9;
+        transition: @transition;
+        &:hover{
+          color: #fff;
+          border: 1.5px solid #fff;
+          transition: @transition;
+        }
       }
 
       .active{
@@ -158,6 +171,11 @@
       justify-content: center;
       border: 1px solid @redColor;
       border-radius: 50px;
+      transition: @transition;
+      &:hover{
+        border: 1px solid @goldColor;
+        transition: @transition;
+      }
     }
   }
   &__price{
@@ -242,8 +260,10 @@
       background: @redColor;
       color: #fff;
       border: none;
+      transition: @transition;
 
       &:hover{
+        transition: @transition;
         background: lighten(@redColor, 10);
       }
     }

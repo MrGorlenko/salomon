@@ -106,7 +106,13 @@
     bottom: 113px;
     width: 287px;
     height: 56px;
-    padding: 20px;
+    // padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &::after{
+      content: 'Подробнее'
+    }
     @media (max-width: @mobileResolution) {
       width: 244px;
     }
@@ -194,25 +200,46 @@
 
 }
 
-.pagination-regular2, .pagination-active2, .pagination-regular3{
+.pagination-regular2, .pagination-active2{
+  margin-right: 19px;
+}
+
+.pagination-regular3{
   margin-right: 19px;
 }
 
 .pagination-regular2, .pagination-regular3{
-  width: 12px;
-  height: 12px;
+  width: 15px;
+  height: 15px;
   display: block;
   border-radius: 50%;
 }
 
 .pagination-regular2{
-  border: 2px solid #fff;
-  transition: .1s ease;
+  border: none;
+  width: 20.97px;
+  height: 20.97px;
+  // transition: .1s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &::after{
+    // position: absolute;
+    border: 2px solid #fff;
+    width: 12px;
+    height: 12px;
+    display: block;
+    content: '';
+    border-radius: 50%;
+  }
   &:hover{
     border: 3px solid @goldColor;
     width: 15px;
     height: 15px;
-    transition: .1s ease;
+    // transition: .1s ease;
+    &::after{
+      border: none;
+    }
   }
 }
 
@@ -224,6 +251,9 @@
   border: 3px solid @goldColor;
   width: 15px;
   height: 15px;
+  &:after{
+    display: none;
+  }
 }
 
 .swiper-container3{

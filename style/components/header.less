@@ -45,7 +45,7 @@
       font-weight: 600;
       font-size: 15px;
       line-height: 18px;
-      img{
+      svg, img{
         margin-right: 8px;
         }
       }
@@ -58,11 +58,26 @@
     .burger-toggle{
       margin-right: 13px;
     }
+    .logo{
+      @media (max-width: 345px){
+        width: 130px;
+      }
+    }
+    .compare{
+      cursor: pointer;
+      transition: @transition;
+      &:hover{
+        transition: @transition;
+        .compare__label{
+          text-decoration: underline;
+        }
+      }
+    }
   }
   &__logos{
     display: flex;
     align-items: center;
-    img{
+    svg{
       margin-right: 15px;
       display: block;
       }
@@ -110,9 +125,10 @@
     text-transform: uppercase;
     color: #1B2232;
     background: none;
-    transition: .2s ease;
+    transition: @transition;
     &:hover{
-      transition: .2s ease;
+      transition: @transition;
+      
       background-color: #e4e4e4;
     }
     @media (max-width: @smallDesctopResolution){

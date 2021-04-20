@@ -44,11 +44,16 @@ footer{
         &:first-child{
           align-items: flex-start; 
         }
-        span{
+        a{
           margin-top: 0;
           margin-bottom: 0;
           font-size: 14px;
           line-height: 24px;
+          color: #fff;
+          text-decoration: none;
+          &:hover{
+            text-decoration: underline;
+          }
         }
         img{
           margin-right: 18px;
@@ -68,6 +73,11 @@ footer{
       justify-content: space-between;
       .menu{
         width: 48%;
+        ul li a{
+          &:hover{
+            border-bottom: 1px solid rgba(255,255,255,.6);
+          }
+        }
       }
     }
     
@@ -88,6 +98,9 @@ footer{
           font-size: 14px;
           font-weight: 300;
           text-decoration: none;
+          &:hover{
+            border-bottom: 1px solid rgba(255,255,255,.6);
+          }
         }
       }
     }
@@ -126,9 +139,14 @@ footer{
       border: none;
       outline: none;
       width: 100px;
+      border: 1px solid #4F4F4F;
+      border-radius: 50px;
       @media (max-width:  @smallDesctopResolution) {
         padding-left: 20px;
         width: calc( 100% - 20px);
+      }
+      &:focus{
+        border: 1px solid #979797;
       }
     }
     .contact{
@@ -138,20 +156,27 @@ footer{
       align-items: center;
       justify-content: space-between;
       color: #4F4F4F;
-      border: 1px solid #4F4F4F;
       border-radius: 50px;
+      position: relative;
       @media (max-width: @mobileResolution){
         width: 296px;
 
       }
 
       button{
-        padding: 7px 20px;
-        margin-right: 5px;
+        width: 112px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         height: 40px;
+        position: absolute;
+        right: 5px;
         @media (max-width:  @smallDesctopResolution) {
           width: 50%;
           font-size: 11px;
+        }
+        &:after{
+          content: 'Подписаться';
         }
       }
     }

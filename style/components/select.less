@@ -65,8 +65,15 @@
   border-radius: 50px;
   color: #8E9BA7;
   width: calc(149px - 54px);
+  transition: @transition;
   @media (max-width: @smallDesctopResolution){
     width: 73px;
+  }
+  &:hover{
+    transition: @transition;
+    color: #fff;
+    border: 1px solid #fff;
+
   }
   
 }

@@ -3,6 +3,50 @@
   height: 48px;
   background-color: #221904;
   margin-top: 28px;
+  @media (max-width: @mobileResolution){
+    height: 44px;
+  }
+
+  .sale{
+    cursor: pointer;
+    @media (min-width: @mobileResolution){
+      svg{
+        transition: @transition;
+        path:nth-child(4){
+          transition: @transition;
+        }
+        path:nth-child(5){
+          transition: @transition;
+          display: none;
+        }
+      }
+      &:hover{
+        svg{
+          path:nth-child(4){
+            transition: @transition;
+            fill: @goldColor;
+          }
+          path:nth-child(5){
+            transition: @transition;
+            display: none;
+          }
+        }
+      }
+    }
+    @media (max-width: @mobileResolution){
+      &:hover{
+        svg{
+          path:nth-child(1){
+            fill: @goldColor;
+          }
+          path:nth-child(2){
+            display: none;
+          }
+        }
+      }
+    }
+
+  }
 
   .container{
     height: 100%;
@@ -20,11 +64,14 @@
     }
 
     @media (max-width: @mobileResolution){
-      img{
+      .sale{
         height: 100%;
         position: absolute;
         top: 0;
         right: 0px;
+        svg{
+          height: 100%;
+        }
       }
     }
   }
@@ -52,19 +99,24 @@
 
       &:hover{
         .innerList{
-          display: block;
+          // display: block;
+          opacity: 1;
+          transition: @transition;
+          z-index: 13;
         }
       }
 
       .innerList{
+        opacity: 0;
+        transition: @transition;
         border-radius: 0 0 6px 6px;
-        z-index: 13;
+        z-index: -1;
         position: absolute;
         top: 50px;
         left:0;
         background-color: #221904;
-        min-width: 125px;
-        display: none;
+        width: 135px;
+        // display: none;
         height: auto;
         -webkit-box-shadow: 0px 35px 39px 12px rgba(0, 0, 0, 0.43);
         -moz-box-shadow: 0px 35px 39px 12px rgba(0, 0, 0, 0.43);
@@ -105,7 +157,7 @@
       &:first-child{
         margin-left: 0;
       }
-      img{
+      svg{
         margin-left: 16px;
       }
     }

@@ -1,72 +1,26 @@
 .catalogMain .container{
   padding-top: 48px;
-  padding-bottom: 48px;
-  .catalog{
-    width: calc(100% - 32px * 2);
-    background-color: #fff;
-    margin-right: 0;
-    padding: 36px 32px;
-
-    position: relative;
-
-    margin-bottom: 50px;
-
-    @media (max-width: @mobileResolution) {
-      height: 112px;
-      padding: 0;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      width: 100%;
-      border-radius: 20px;
-    } 
-
-    .sorting{
-      position: absolute;
-      right: 32px;
-      top: 36px;
-      display: flex;
-      align-items: center;
-      p{
-        margin-right: 13px;
-      }
-
-      &__filter{
-        border: 1px solid #828282;
-        color: #CA0A0A;
-        padding: 19px 11px;
-        border-radius: 50px;
-      }
-    }
-
-    @media (max-width: @smallDesctopResolution) {
-      button{
-        width: 15%;
-      }
-    }
-    @media (max-width: @mobileResolution) {
-      button{
-        padding-top: 16px;
-        padding-bottom: 16px;
-      }
-    }
-  }
+  // padding-bottom: 48px;
 
   .ShowAll{
     margin: auto;
     width: 215px;
-    height: 56px;
+    height: 52px;
     border-radius: 50px;
     background: none;
     border: 2px solid @goldColor;
     color:#000;
     text-transform: uppercase;
-    transition: color .2s ease;
-    &:hover{
-      color: #fff;
-      transition: color .2s ease;
-      background: linear-gradient(90deg, #DBC266 1.32%, #AE8930 47.06%, #CFA43D 89.38%, #F5E38B 100%);
+    // margin-bottom: 48px;
+
+    &:after{
+      content: 'ПОКАЗАТЬ ВСЁ';
+      height: 100%;
     }
 
   }
+}
+
+.catalodMainItems {
+  padding-bottom: 48px;
 }

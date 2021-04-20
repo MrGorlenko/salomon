@@ -1,3 +1,5 @@
+@transition: .2s ease;
+
 button{
   border-radius: 50px;
   outline: none !important;
@@ -5,7 +7,7 @@ button{
 }
 
 .golden-button{
-  background: linear-gradient(90deg, #DBC266 1.32%, #AE8930 47.06%, #CFA43D 89.38%, #F5E38B 100%);
+  background: linear-gradient(90deg, #F5E38B 5.32%, #be9940 47.06%, #be9942 89.38%, #F5E38B 100%);
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
   border-radius: 500px;
   color: #fff;
@@ -14,13 +16,37 @@ button{
   overflow: none;
 
   border: none;
-  transition: color .2s ease;
+  transition: @transition;
+  // position: relative;
 
   &:hover{
-    color: #fff;
-    transition: color .2s ease;
-    background: linear-gradient(90deg, #DBC266 5.32%, #f7ae05 47.06%, #f7ae05 89.38%, #F5E38B 100%);
+    &::after{
+      opacity: 0;
+      transition: @transition;
+    }
   }
+
+  &:after{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left:0;
+    border-radius: 500px;
+    background: linear-gradient(90deg, #DBC266 1.32%, #AE8930 47.06%, #CFA43D 89.38%, #F5E38B 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: @transition;
+    &:hover{
+      .golden-button::after{
+        opacity: 0;
+        transition: @transition;
+      }
+    }
+  }
+
 }
 
 .toggle-button{
@@ -32,7 +58,7 @@ button{
   background: none;
 
   text-transform: uppercase;
-  transition: .2s ease;
+  transition: @transition;
 
 
   &-active{
@@ -42,7 +68,7 @@ button{
   }
 
   &:hover{
-    transition: .2s ease;
+    transition: @transition;
     background-color: #e4e4e4;
   }
 }
@@ -56,11 +82,32 @@ button{
   justify-content: center;
   align-items: center;
   transition: .2s ease;
+  position: relative;
+  &:after{
+    background: linear-gradient(90deg, #DBC266 1.32%, #AE8930 47.06%, #CFA43D 89.38%, #F5E38B 100%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    content: 'Купить в 1 клик';
+    position: absolute;
+    top:0;
+    left:0;
+    border-radius: 50px;
+    opacity: 0;
+    transition: @transition;
+  }
 
   &:hover{
-    color: #fff;
-    transition: color .2s ease;
-    background: linear-gradient(90deg, #DBC266 1.32%, #AE8930 47.06%, #CFA43D 89.38%, #F5E38B 100%);
+    &:after{
+      transition: @transition;
+      opacity: 1;
+    }
+    // color: #fff;
+    // transition: @transition;
+    // background: linear-gradient(90deg, #DBC266 1.32%, #AE8930 47.06%, #CFA43D 89.38%, #F5E38B 100%);
   }
 }
 
@@ -201,4 +248,99 @@ body{
   to {
     width: 0;
   }
+}
+
+.pageHeader{
+  font-weight: 800;
+  font-size: 56px;
+  line-height: 68px;
+  margin-top: 0;
+  margin-bottom: 0;
+  @media (max-width: @mobileResolution){
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+
+.catalogSwitcher{
+  width: calc(100% - 32px * 2);
+  background-color: #fff;
+  margin-right: 0;
+  padding: 36px 32px;
+
+  position: relative;
+
+  margin-bottom: 50px;
+
+  @media (max-width: @mobileResolution) {
+    height: 112px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 20px;
+  } 
+
+  .sorting{
+    position: absolute;
+    right: 32px;
+    top: 36px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    p{
+      margin-right: 13px;
+    }
+
+    &__filter{
+      border: 1px solid #828282;
+      color: #CA0A0A;
+      padding: 19px 11px;
+      border-radius: 50px;
+      width: calc(140px - 22px);
+      font-size: 13px;
+      transition: @transition;
+      &::after{
+        top: 23px;
+      }
+
+      &:hover{
+        border: 1px solid @goldColor;
+
+        transition: @transition;
+      }
+
+      ul{
+        li{
+          list-style: none;
+        }
+      }
+    }
+  }
+
+  @media (max-width: @smallDesctopResolution) {
+    button{
+      width: 15%;
+    }
+  }
+  @media (max-width: @mobileResolution) {
+    button{
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+  }
+}
+
+.ShowAll{
+  text-transform: uppercase;
+  padding: 18px 49px;
+  margin: auto;
+  &::after{
+    content: 'ПОКАЗАТЬ ВСЁ'
+  }
+}
+
+.bg-white{
+  background-color: #fff;
 }

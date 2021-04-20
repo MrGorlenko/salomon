@@ -74,6 +74,19 @@
     .golden-button{
       text-transform: uppercase;
       margin-right: 14px;
+      position: relative;
+      &::after{
+        content: 'КУПИТЬ';
+      }
+    }
+    .one-click-button{
+      width: 95px;
+      &:after{
+        width: calc(100% - 36px);
+        content: 'Купить в 1 клик ';
+        padding-left: 18px;
+        padding-right: 18px;
+      }
     }
     button{
       height: 48px;
