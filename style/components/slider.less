@@ -357,3 +357,81 @@
     }
   }
 }
+
+
+@ItemHeight: 560px;
+.swiper-container8{
+  height: @ItemHeight;
+  position: relative;
+  @media (max-width: @mobileResolution){
+    height: 252px;
+  }
+  .slider__arrow{
+    position: absolute;
+    top: calc(@ItemHeight / 2 - 62px);
+    width: 100%;
+    z-index: 15;
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: @mobileResolution){
+      display: none;
+    }
+    svg{
+      cursor: pointer;
+      &:hover{
+        g rect{
+          fill: @goldColor;
+        }
+      }
+    }
+    .prev{
+      margin-left: -25px;
+    }
+    .next{
+      margin-right: -25px;
+    }
+  }
+}
+
+.swiper-container9{
+  width: 100%;
+  height: 480px;
+  position: relative;
+  @media (max-width: @mobileResolution){
+    height: 512px;
+    overflow: hidden;
+
+  }
+  .swiper-slide{
+    border-radius: 20px;
+    background-size: cover;
+    @media (max-width: @mobileResolution){
+      height: 192px;
+    }
+  }
+  .slider__arrow{
+    position: absolute;
+    top: 200px;
+    width: 100%;
+    z-index: 15;
+    display: flex;
+    justify-content: space-between;
+    svg{
+      cursor: pointer;
+      &:hover{
+        g rect{
+          fill: @goldColor;
+        }
+      }
+    }
+    .prev{
+      margin-left: -25px;
+    }
+    .next{
+      margin-right: -25px;
+    }
+  }
+  .custom-pagination{
+    top: 140px;
+  }
+}

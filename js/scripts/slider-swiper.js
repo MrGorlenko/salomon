@@ -15,10 +15,6 @@ const swiper = new Swiper('.swiper-container', {
     prevEl: '.slider__arrows .prev',
   },
 
-  // autoplay: {
-  //   delay : '5000'
-  // }
-
 });
 
 const swiper2 = new Swiper('.swiper-container2', {
@@ -100,4 +96,33 @@ const swiper7 = new Swiper('.swiper-container7', {
     nextEl: '.custom-arrow3 .next',
     prevEl: '.custom-arrow3 .prev'
   },
+})
+
+const swiper8 = new Swiper('.swiper-container8', {
+  pagination : {
+    el : '.custom-pagination',
+    bulletClass: 'pagination-regular',
+    bulletActiveClass: 'pagination-active',
+    clickable: true,
+    type: 'bullets',
+  },
+  navigation: {
+    nextEl: '.slider__arrow .next',
+    prevEl: '.slider__arrow .prev'
+  }
+})
+
+const swiper9 = new Swiper('.swiper-container9', {
+  navigation: {
+    nextEl: '.slider__arrow .next',
+    prevEl: '.slider__arrow .prev'
+  },
+  slidesPerView: 1,
+  pagination: {
+    el : '.custom-pagination',
+    bulletClass: 'pagination-regular',
+    bulletActiveClass: 'pagination-active',
+    clickable: true,
+    type: 'bullets',
+  }
 })
