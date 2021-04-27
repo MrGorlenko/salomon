@@ -10,6 +10,13 @@
     top: calc(16px - 2%);
     right: 16px;
     z-index: 1;
+    cursor: pointer;
+    transition: @transition;
+    opacity: 1;
+    &:hover{
+      transition: @transition;
+      opacity: 0.5;
+    }
   }
   img, div, ul, button{
     z-index: 1;
@@ -45,7 +52,49 @@
   background: #fff;
   box-shadow: @box-shadow;
   border-radius: 20px;
-
+  position: relative;
+  .mobileLabel{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    &_chars{
+      width: calc(100% - 21px);
+      top: 240px;
+      height: 40px;
+      background: #F6F3E4;
+      padding-left: 21px;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 17px;
+      color: #221904;
+    }
+    &_height{
+      top: 300px;
+    }
+    &_dencity{
+      top: 355px;
+    }
+    &_type{
+      top: 420px;
+    }
+    &_power{
+      top: 485px;
+    }
+    &_mini{
+      top: 550px;
+    }
+    &_hypoallergic{
+      top: 650px;
+    }
+    &_grey{
+      justify-content: center;
+      color: #828282;
+      font-size: 13px;
+      line-height: 16px;
+    }
+    
+  }
   .col{
     display: flex;
     align-items: center;
@@ -59,15 +108,26 @@
       transition: @transition;
     }
     &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5){
-      &:hover{
-        .selected-col;
+      @media (min-width: @mobileResolution){
+        &:hover{
+          .selected-col;
+        }
       }
+
+    }
+
+    @media (max-width: @mobileResolution){
+      width: 50%;
     }
 
 
     .itemPic{
       width: 86%;
       height: 135px;  
+      @media (max-width: @mobileResolution){
+        width: 126px;
+        height: 79px;
+      }
     }
 
     button{
@@ -82,8 +142,12 @@
       padding-bottom: 60px;
       width: 100%;
       border-bottom: 1px solid #E7ECEE;
-      @media (max-width: @smallDesctopResolution){
-        margin-bottom: 50px;
+      // @media (max-width: @smallDesctopResolution){
+      //   margin-bottom: 50px;
+      // }
+      @media (max-width: @mobileResolution){
+        padding-bottom: 45px;
+        margin-bottom: 75px;
       }
       p, span{
         font-size: 16px;
@@ -91,6 +155,10 @@
         color: #221904;
         text-align: center;
         display: block;
+        @media (max-width: @mobileResolution){
+          font-size: 13px;
+          line-height: 21px;
+        }
       }
       p{
         margin-top: 0;
@@ -163,8 +231,11 @@
       margin-bottom: 15px;
       color: #6D6D6D;
       font-size: 15px;
-      line-height: 26px;
+      line-height: 16px;
       text-align: center;
+      @media (max-width: @mobileResolution){
+        margin-bottom: 35px;
+      }
       &:nth-child(1){
         height: 26px;
       }

@@ -327,361 +327,161 @@
     </ul>
   </div>
 
-
   <!-- base -->
 
   <div class="way">
     <div class="container">
       <a href='#' >Главная</a>
       >
-      <a href='#' class='active'>Матрасы</a>
+      <a href='#' class='active'>Контакты</a>
     </div>
   </div>
 
-  <section class="section comparing">
+  <section class="section contacts">
     <div class="container">
-      <h2 class="pageHeader">Сравнение товаров</h2>
-
-      <div id='catalogMain' class="swicther catalogSwitcher catalog-wrapper">
-        <button class="toggle-button">
-          Кровати
-          <span>3</span>
-        </button>
+      <h2 class="pageHeader">Контакты</h2>
+      <div id='catalogMain' class="catalog catalogSwitcher catalog-wrapper d-sm-none">
         <button class="toggle-button toggle-button-active">
-          Матрасы
-          <span>12</span>
+          Адреса
         </button>
-  
+        <button class="toggle-button">    
+          Пункты самовывоза
+        </button>
+
         <div class="sorting">
-          Удалить список
+          <p>Сортировка по</p>
+          <div onClick='select4.changeState.call(select4)'
+           class='sorting__filter select select4 '>
+           <span>Популярности</span> 
+
+            <ul class='unactive'>
+              <li  onclick="select4.selectOption('Популярности')">
+                Популярности</li>
+              <li  onclick="select4.selectOption('Цене')">
+                Цене</li>
+              <li onclick="select4.selectOption('Качеству')">
+                Качеству</li>
+            </ul>
+
+          </div>
         </div>
-  
-  
-  
+
+
+
       </div>
 
-      
-
-      <div class="comparingItems d-flex">
-        <div class="mobileLabel mobileLabel_chars d-lg-none">
-          Характеристики
-        </div>
-        <div class="mobileLabel mobileLabel_height mobileLabel_grey d-lg-none">
-          Высота матраса (см)
-        </div>
-        <div class="mobileLabel mobileLabel_dencity mobileLabel_grey d-lg-none">
-          Жесткость
-        </div>
-        <div class="mobileLabel mobileLabel_type mobileLabel_grey d-lg-none">
-          Тип матраса
-        </div>
-        <div class="mobileLabel mobileLabel_power mobileLabel_grey d-lg-none">
-          Макс нагрузка на матрас
-        </div>
-        <div class="mobileLabel mobileLabel_mini mobileLabel_grey d-lg-none">
-          Возможность скрутить
-        </div>
-        <div class="mobileLabel mobileLabel_hypoallergic mobileLabel_grey d-lg-none">
-          Гипоаллергенный
-        </div>
-        <div class="info col d-sm-none">
-          <img class='logo' src="../img/logo2.svg" alt="">
-
-          <div class='title'>
-            <p>Характеристики</p>
+      <div class="catalog d-lg-none">
+        <div class="swiper-container7">
+          <div id='catalogMainMobile' class="swiper-wrapper">
+            <button class="swiper-slide toggle-button toggle-button-active">
+              Адреса
+            </button>
+            <button class="swiper-slide toggle-button">    
+              Пункты самовывоза
+            </button>
           </div>
-          <ul class="chars">
-            <li>
-              Высота матраса (см)
-            </li>
-            <li>
-              Жесткость матраса
-            </li>
-            <li>Тип матраса</li>
-            <li>Макс. нагрузка на одно спальное место</li>
-            <li>Возможность скрутить</li>
-            <li>Гипоаллергенный</li>
-          </ul>
-        </div>
-
-        <div class="col">
-          <img src="../img/extra-strong.png" alt="" class="itemPic">
-          <div class="name">
-            <span>Матрас</span>
-            <p>"Family Rich"</p>
-            <span>от 9500 руб.</span>
+          <div class="custom-arrow3">
+            <img class='prev' src="../img/arrowPrev3.svg" alt="">
+            <img class='next' src="../img/arrowNext3.svg" alt="">
           </div>
-          <ul class="chars">
-            <li>
-              от 12 см
-            </li>
-            <li>
-              Мягкий/Средний
-            </li>
-            <li>Беспружинный</li>
-            <li>90</li>
-            <li class='checked'></li>
-            <li class='checked'></li>
-          </ul>
-
-          <button class="one-click-button">
-            Купить
-          </button>
-        </div>
-
-        <div class="col">
-          <img src="../img/extra-strong.png" alt="" class="itemPic">
-          <div class="name">
-            <span>Матрас</span>
-            <p>"Family Rich"</p>
-            <span>от 9500 руб.</span>
-          </div>
-          <ul class="chars">
-            <li>
-              от 20 см
-            </li>
-            <li>
-              Мягкий/Средний
-            </li>
-            <li>Пружинный</li>
-            <li>90</li>
-            <li class='checked'></li>
-            <li class='not'></li>
-          </ul>
-
-          <button class="one-click-button">
-            Купить
-          </button>
-        </div>
-
-        <div class="col d-sm-none">
-          <img src="../img/extra-strong.png" alt="" class="itemPic">
-          <div class="name">
-            <span>Матрас</span>
-            <p>"Family Rich"</p>
-            <span>от 9500 руб.</span>
-          </div>
-          <ul class="chars">
-            <li>
-              от 20 см
-            </li>
-            <li>
-              Мягкий/Средний
-            </li>
-            <li>Пружинный</li>
-            <li>90</li>
-            <li class='checked'></li>
-            <li class='not'></li>
-          </ul>
-
-          <button class="one-click-button">
-            Купить
-          </button>
-        </div>
-
-        <div class="col d-sm-none">
-          <img src="../img/extra-strong.png" alt="" class="itemPic">
-          <div class="name">
-            <span>Матрас</span>
-            <p>"Family Rich"</p>
-            <span>от 9500 руб.</span>
-          </div>
-          <ul class="chars">
-            <li>
-              от 20 см
-            </li>
-            <li>
-              Мягкий/Средний
-            </li>
-            <li>Пружинный</li>
-            <li>90</li>
-            <li class='checked'></li>
-            <li class='not'></li>
-          </ul>
-
-          <button class="one-click-button">
-            Купить
-          </button>
         </div>
       </div>
+
+      <div class="contacts__base">
+        <div class="selections d-flex">
+          <div class='district'>
+            <p>Выберите область</p>
+            <div onClick='select6.changeState.call(select6)'
+             class="select select6 selectWidget">
+              <span>Новосибирская</span>
+  
+              <ul class="unactive">
+                <li onclick="select6.selectOption('Новосибирская')">
+                  Новосибирская</li>
+                <li onclick="select6.selectOption('Московская')">
+                  Московская</li>
+                <li onclick="select6.selectOption('Томская')">
+                  Томская</li>
+                <li onclick="select6.selectOption('Ленинградская')">
+                  Ленинградская</li>
+              </ul>
+            </div>
+          </div>
+  
+          <div class='city'>
+            <p>Выберите город</p>
+            <div onClick='select7.changeState.call(select7)'
+             class="select select7 selectWidget">
+              <span>Выберите город</span>
+  
+              <ul class="unactive">
+                <li onclick="select7.selectOption('Москва')">
+                  Москва</li>
+                <li onclick="select7.selectOption('Новосибирск')">
+                  Новосибирск</li>
+                <li onclick="select7.selectOption('Томск')">
+                  Томск</li>
+                <li onclick="select7.selectOption('Санкт-Петербург')">
+                  Санкт-Петербург</li>
+              </ul>
+            </div>
+          </div>
+  
+        </div>
+
+        <div class="contact d-flex">
+          <div class="info">
+            <h3>Salomon на Курчатова</h3>
+            <ul>
+              <li>
+                <img src="../img/marker.svg" alt="">
+                <a href="#">Курчатова, <br> 16 Комсомольский пр., 47</a>
+              </li>
+              <li>
+                <img src="../img/convertFooterIcon.svg" alt="">
+                <a href="#">email@mail.com</a>
+              </li>
+              <li class='phone'> <img src="../img/phoneFooterIcon.svg" alt=""> 
+                <a href="#">8 800 555 3535</a>
+            </ul>
+            <button class="one-click-button">
+              ПОЗВОНИ МНЕ
+            </button>
+          </div>
+          <div class="map">
+            <img src="../img/map1.png" alt="">
+          </div>
+        </div>
+
+        <div class="contact d-flex">
+          <div class="info">
+            <h3>Salomon на Урицкого</h3>
+            <ul>
+              <li>
+                <img src="../img/marker.svg" alt="">
+                <a href="#">Курчатова, <br> 16 Комсомольский пр., 47</a>
+              </li>
+              <li>
+                <img src="../img/convertFooterIcon.svg" alt="">
+                <a href="#">email@mail.com</a>
+              </li>
+              <li class='phone'> <img src="../img/phoneFooterIcon.svg" alt=""> 
+                <a href="#">8 800 555 3535</a>
+            </ul>
+            <button class="one-click-button">
+              ПОЗВОНИ МНЕ
+            </button>
+          </div>
+          <div class="map">
+            <img src="../img/map2.png" alt="">
+          </div>
+        </div>
+      </div>
+
     </div>
 
 
   </section>
-
-  <section class='section feedbacks'>
-
-    <div class="feedbacks__bg"></div>
-
-    <div class="container">
-      <h4>Отзывы</h4>
-
-      <div class="swiper-container6">
-        <div class="custom-arrow3">
-          <img class='prev' src="../img/arrowPrev3.svg" alt="">
-          <img class='next' src="../img/arrowNext3.svg" alt="">
-        </div>
-        <div class="swiper-wrapper">
-          <div class="feedback swiper-slide">
-            <div class="author d-flex">
-            <div class="pic">
-              <img src="../img/unknown.png" alt="">
-            </div>
-            <div class="info">
-            <p class="name">Мария Иванова</p>
-            <span>Матрас "Extra Strong"</span>
-            <div class="mark">
-              <img src="../img/filledStar.svg" alt="">
-              <img src="../img/filledStar.svg" alt="">
-              <img src="../img/filledStar.svg" alt="">
-              <img src="../img/filledStar.svg" alt="">
-              <img src="../img/filledStar.svg" alt="">
-
-              / 
-
-              4,9 из 5
-            </div>
-          </div>
-          <a href='#' class="link"><img src="../img/instaIcon.svg" alt=""></a>
-        </div>
-        <img class='line' src="../img/goldenWhiteDottenLine.svg" alt="">
-        <div class="content">
-          <p>
-            Боялся, но пересилил себя. Сначала пугали и цены, и отзывы, и сам сайт чем-то пугал, но всё же решил рискнуть, и проверить всё это дело на подлинность. Но на моё удивление, и заказ приняли быстро, и телефон привезли нормальный, не битый, не пересобранный, и даже оригинальный. Возможно, я попал в 10 тку и мне повезло, но думаю, что все люди из отзывов так же удивились увиденному. Могу сказать столько спасибо. Спасибо.
-          </p>
-        </div>
-          </div>
-
-          <div class="feedback swiper-slide">
-            <div class="author d-flex">
-            <div class="pic">
-              <img src="../img/unknown.png" alt="">
-            </div>
-            <div class="info">
-            <p class="name">Петр Свиридов</p>
-            <span>Матрас "Extra Strong"</span>
-            <div class="mark">
-              <img src="../img/filledStar.svg" alt="">
-              <img src="../img/filledStar.svg" alt="">
-              <img src="../img/filledStar.svg" alt="">
-              <img src="../img/filledStar.svg" alt="">
-              <img src="../img/filledStar.svg" alt="">
-
-              / 
-
-              4,9 из 5
-            </div>
-          </div>
-          <a href='#' class="link"><img src="../img/instaIcon.svg" alt=""></a>
-        </div>
-        <img class='line' src="../img/goldenWhiteDottenLine.svg" alt="">
-        <div class="content">
-          <p>
-            Но на моё удивление, и заказ приняли быстро, и телефон привезли нормальный, не битый, не пересобранный, и даже оригинальный. Возможно, я попал в 10тку и мне повезло, но думаю, что все люди из отзывов так же удивились увиденному. Могу сказать столько спасибо. Спасибо.
-          </p>
-        </div>
-          </div>
-
-          <div class="feedback swiper-slide">
-            <div class="author d-flex">
-            <div class="pic">
-              <img src="../img/unknown.png" alt="">
-            </div>
-            <div class="info">
-            <p class="name">Светлана Петрова</p>
-            <span>Матрас "Extra Strong"</span>
-            <div class="mark">
-              <img src="../img/filledStar.svg" alt="">
-              <img src="../img/filledStar.svg" alt="">
-              <img src="../img/filledStar.svg" alt="">
-              <img src="../img/filledStar.svg" alt="">
-              <img src="../img/filledStar.svg" alt="">
-
-              / 
-
-              4,9 из 5
-            </div>
-          </div>
-          <a href='#' class="link"><img src="../img/instaIcon.svg" alt=""></a>
-        </div>
-        <img class='line' src="../img/goldenWhiteDottenLine.svg" alt="">
-        <div class="content">
-          <p>
-            Боялся, но пересилил себя. Сначала пугали и цены, и отзывы, и сам сайт чем-то пугал, но всё же решил рискнуть, и проверить всё это дело на подлинность. Но на моё удивление, и заказ приняли быстро, и телефон привезли нормальный, не битый, не пересобранный, и даже оригинальный. Возможно, я попал в 10тку и мне повезло, но думаю, что все люди из отзывов так же удивились увиденному. Могу сказать столько спасибо. Спасибо.
-          </p>
-        </div>
-          </div>
-
-          <div class="feedback swiper-slide">
-            <div class="author d-flex">
-            <div class="pic">
-              <img src="../img/unknown.png" alt="">
-            </div>
-            <div class="info">
-            <p class="name">Мария Иванова</p>
-            <span>Матрас "Extra Strong"</span>
-            <div class="mark">
-              <img src="../img/filledStar.svg" alt="">
-              <img src="../img/filledStar.svg" alt="">
-              <img src="../img/filledStar.svg" alt="">
-              <img src="../img/filledStar.svg" alt="">
-              <img src="../img/filledStar.svg" alt="">
-
-              / 
-
-              4,9 из 5
-            </div>
-          </div>
-          <a href='#' class="link"><img src="../img/instaIcon.svg" alt=""></a>
-        </div>
-        <img class='line' src="../img/goldenWhiteDottenLine.svg" alt="">
-        <div class="content">
-          <p>
-            Боялся, но пересилил себя. Сначала пугали и цены, и отзывы, и сам сайт чем-то пугал, но всё же решил рискнуть, и проверить всё это дело на подлинность. Но на моё удивление, и заказ приняли быстро, и телефон привезли нормальный, не битый, не пересобранный, и даже оригинальный. Возможно, я попал в 10 тку и мне повезло, но думаю, что все люди из отзывов так же удивились увиденному. Могу сказать столько спасибо. Спасибо.
-          </p>
-        </div>
-          </div>
-
-          <div class="feedback swiper-slide">
-            <div class="author d-flex">
-            <div class="pic">
-              <img src="../img/unknown.png" alt="">
-            </div>
-            <div class="info">
-            <p class="name">Мария Иванова</p>
-            <span>Матрас "Extra Strong"</span>
-            <div class="mark">
-              <img src="../img/filledStar.svg" alt="">
-              <img src="../img/filledStar.svg" alt="">
-              <img src="../img/filledStar.svg" alt="">
-              <img src="../img/filledStar.svg" alt="">
-              <img src="../img/filledStar.svg" alt="">
-
-              / 
-
-              4,9 из 5
-            </div>
-          </div>
-          <a href='#' class="link"><img src="../img/instaIcon.svg" alt=""></a>
-        </div>
-        <img class='line' src="../img/goldenWhiteDottenLine.svg" alt="">
-        <div class="content">
-          <p>
-            Боялся, но пересилил себя. Сначала пугали и цены, и отзывы, и сам сайт чем-то пугал, но всё же решил рискнуть, и проверить всё это дело на подлинность. Но на моё удивление, и заказ приняли быстро, и телефон привезли нормальный, не битый, не пересобранный, и даже оригинальный. Возможно, я попал в 10 тку и мне повезло, но думаю, что все люди из отзывов так же удивились увиденному. Могу сказать столько спасибо. Спасибо.
-          </p>
-        </div>
-          </div>
-        </div>
-      </div>
-
-      <button class="one-click-button">
-        Показать все
-      </button>
-
-
-    </div>
-  </section>
-
 
   <!-- base -->
 

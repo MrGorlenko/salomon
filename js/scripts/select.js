@@ -35,5 +35,7 @@ select5 = new Select(document.querySelector('.select5'), false)
 select6 = new Select(document.querySelector('.select6'), false)
 select7 = new Select(document.querySelector('.select7'), false)
 select8 = new Select(document.querySelector('.select8'), false)
+select9 = new Select(document.querySelector('.select9'), false)
+select10 = new Select(document.querySelector('.select10'), false)
 
 
