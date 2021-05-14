@@ -1,6 +1,14 @@
 @left: 48px;
 @mobileLeft: 25px;
 
+// @media (max-width: @mobileResolution){
+//   .catalog {
+//     .swiper-wrapper{
+//       height: 52px;
+//     }
+//   }
+// }
+
 .slider{
   width: 832px;
   height: 560px;
@@ -333,15 +341,25 @@
 }
 
 .swiper-container7{
-  width: calc(100% - 20px);
-  padding-left: 20px;
+  // width: calc(100% - 20px);
+  // padding-left: 20px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
+  @media (max-width: @mobileResolution){
+    background-color: #fff;
+    padding: 5px 0;
+    margin-bottom: 24px;
+  }
 
   .swiper-wrapper{
     width: 171px;
+    @media (max-width: @mobileResolution){
+      height: 52px;
+      background-color: #fff;
+    }
   }
 
   .custom-arrow3{
