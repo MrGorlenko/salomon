@@ -8,8 +8,10 @@ class Select {
   changeState() {
     this.state = !this.state
     if (this.state) {
+      this.element.classList.add('selected')
       this.element.children[1].className = 'active'
     } else {
+      this.element.classList.remove('selected')
       this.element.children[1].className = 'unactive'
     }
   }

@@ -15,9 +15,7 @@
     height: auto;
   }
 
-  &:last-child{
-    margin-bottom: 47px;
-  }
+
   &__slider{
     width: 48%;
     display: flex;
@@ -77,14 +75,19 @@
   }
   &__about{
     width: 28%;
-    background: linear-gradient(0deg, #000000, #000000);
+    // background: linear-gradient(0deg, #000000, #000000);
+    background: linear-gradient(
+      95.2deg
+      , #1E2027 4.17%, #1B2232 96.87%);
     @media (max-width: @mobileResolution){
       width: 100%;
       flex-direction: column-reverse;
     }
 
+
+
     ul{
-      padding-top: 40px;
+      // padding-top: 40px;
       margin-top: 0;
       padding-left: 32px;
 
@@ -174,10 +177,23 @@
       justify-content: center;
       border: 1px solid @redColor;
       border-radius: 50px;
-      transition: @transition;
+      // transition: @transition;
       &:hover{
         border: 1px solid @goldColor;
-        transition: @transition;
+        // transition: @transition;
+      }
+    }
+
+    .selected{
+      border-radius: 25px 25px 0 0; 
+
+      ul {
+        padding-top: 0;
+        width: calc(100% - 1px);
+        left: -1px;
+        li{
+          margin-top: 0;
+        }
       }
     }
   }
@@ -324,12 +340,44 @@
   }
   &__base{
     width: calc(100% - 3px * 2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     @media (max-width: @mobileResolution) {
       padding-left: 22px;
       padding-right: 22px;
       width: calc(100% - 44px);
       padding-top: 36px;
       padding-bottom: 36px;
+      align-items: center;
+      .detailsMobile{
+        margin-top: 10px;
+        margin-bottom: 13px;
+        width: fit-content;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+
+        position: relative;
+
+        &::after{
+          position: absolute;
+          display: block;
+          width: 9px;
+          height: 9px;
+          content: '';
+          // background-color: red;
+          background-image: url('../img/detailsVector.svg');
+          background-repeat: no-repeat;
+          top: 5px;
+          right: -20px;
+        }
+      }
+      ul, div{
+        display: none;
+        
+      }
+
     }
     ul li div:first-child {
       display: flex;

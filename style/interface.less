@@ -306,6 +306,7 @@ body{
 
   margin-bottom: 50px;
 
+
   @media (max-width: @mobileResolution) {
     height: 112px;
     padding: 0;
@@ -334,7 +335,7 @@ body{
       border-radius: 50px;
       width: calc(140px - 22px);
       font-size: 13px;
-      transition: @transition;
+      // transition: @transition;
       &::after{
         top: 23px;
       }
@@ -342,16 +343,31 @@ body{
       &:hover{
         border: 1px solid @goldColor;
 
-        transition: @transition;
+        // transition: @transition;
       }
 
       ul{
+        background: #fff;
         li{
           list-style: none;
+          padding-top: 19px;
+          padding-bottom: 19px;
+          font-size: 13px;
+          text-align: left;
+          color: #1B2232;
+          &:hover{
+            background: #fff;
+            color: #CA0A0A;
+          }
         }
       }
     }
   }
+
+  .selected{
+    border-radius: 25px 25px 0 0;
+  }
+
 
   @media (max-width: @smallDesctopResolution) {
     button{

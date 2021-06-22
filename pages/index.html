@@ -343,18 +343,18 @@
           </defs>
           </svg>
           
-        <img class='search__line' src="../img/goldline.svg" alt="">
+        <img class='search__line' src="../img/goldline2.svg" alt="">
 
         <h2>Подбор матраса</h2>
 
-        <div class="search__counter d-flex-align-center">
+        <!-- <div class="search__counter d-flex-align-center">
           <div id='range' class="runner d-flex-align-center">
             <div id='thumb-min' class="circle">
             </div>
             <div id='thumb-max' class="circle">
             </div>
           </div>
-        </div>
+        </div> -->
 
         <ul class='search__selects'>
           <li class='d-flex align-items-center'> 
@@ -416,10 +416,10 @@
           Подобрать
         </button>
 
-        <button class='search__cancel'>
+        <!-- <button class='search__cancel'>
           <img src="../img/redAxe.svg" alt="">
           Отменить 
-        </button>
+        </button> -->
       </div>
       
       <div class='d-flex flex-direction-column hero__slider'>
@@ -612,6 +612,9 @@
             <img class='d-lg-none' src="../img/goldenDottenLineHorizontal.svg" alt="">
 
             <div class="SaleGood__base">
+
+              <p class='d-lg-none detailsMobile' > Подробнее </p>
+
               <ul>
                 <li class='d-flex-align-between'> 
                   <div><img src="../img/featherIcon.svg" alt=""> Жесткость</div>
@@ -714,6 +717,7 @@
             <img class='d-lg-none' src="../img/goldenDottenLineHorizontal.svg" alt="">
             
             <div class="SaleGood__base">
+              <p class='d-lg-none detailsMobile' > Подробнее </p>
               <ul>
                 <li class='d-flex-align-between'> 
                   <div><img src="../img/featherIcon.svg" alt=""> Жесткость</div>
@@ -810,6 +814,7 @@
             <img class='d-lg-none' src="../img/goldenDottenLineHorizontal.svg" alt="">
             
             <div class="SaleGood__base">
+              <p class='d-lg-none detailsMobile' > Подробнее </p>
               <ul>
                 <li class='d-flex-align-between'> 
                   <div><img src="../img/featherIcon.svg" alt=""> Жесткость</div>
@@ -1463,5 +1468,16 @@
   <script src='../js/scripts/select.js'></script>
   <script src='../js/scripts/main.js'></script>
   <script src='../js/scripts/runner.js'></script>
+
+  <script>
+    let btn = document.querySelector('.detailsMobile')
+
+    btn.onclick = () => {
+      //console.log(event.target.parentNode.querySelector('ul'))
+      event.target.style.display = 'none'
+      event.target.parentNode.querySelector('ul').style.display = 'block'
+      event.target.parentNode.querySelector('div').style.display = 'block'
+    }
+  </script>
 </body>
 </html>
